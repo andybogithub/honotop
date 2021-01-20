@@ -43,7 +43,7 @@ public partial class webadmin_NewsList : System.Web.UI.Page
         int recordCount = dalNews.GetRecordCount(strWhere);
         int startIndex = 0;
         int endIndex = 0;
-        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, strParams, 3, "/webadmin/NewsList.aspx", out startIndex, out endIndex);
+        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, strParams, 3, "/thisisbackstage/NewsList.aspx", out startIndex, out endIndex);
         this.lblPagination.Text = strPager;
         #endregion
 

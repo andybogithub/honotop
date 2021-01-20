@@ -27,7 +27,7 @@ public partial class thisisbackstage_LoginLog : System.Web.UI.Page
         int recordCount = dalAdmins.GetRecordCount(strWhere);
         int startIndex = 0;
         int endIndex = 0;
-        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, strParams, 3, "/webadmin/LoginLog.aspx", out startIndex, out endIndex);
+        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, strParams, 3, "/thisisbackstage/LoginLog.aspx", out startIndex, out endIndex);
         this.lblPagination.Text = strPager;
         #endregion
 

@@ -43,7 +43,7 @@ public partial class webadmin_PhotosList : System.Web.UI.Page
         int recordCount = dalPhotos.GetRecordCount(strWhere);
         int startIndex = 0;
         int endIndex = 0;
-        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, strParams, 3, "/webadmin/PhotosList.aspx", out startIndex, out endIndex);
+        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, strParams, 3, "/thisisbackstage/PhotosList.aspx", out startIndex, out endIndex);
         this.lblPagination.Text = strPager;
         #endregion
 

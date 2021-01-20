@@ -24,7 +24,7 @@ public partial class webadmin_Honors : System.Web.UI.Page
         int recordCount = dalHonors.GetRecordCount(strWhere);
         int startIndex = 0;
         int endIndex = 0;
-        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, "", 3, "/webadmin/Honors.aspx", out startIndex, out endIndex);
+        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, "", 3, "/thisisbackstage/Honors.aspx", out startIndex, out endIndex);
         this.lblPagination.Text = strPager;
         #endregion
 

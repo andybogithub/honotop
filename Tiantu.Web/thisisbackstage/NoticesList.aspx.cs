@@ -26,7 +26,7 @@ public partial class webadmin_NoticesList : System.Web.UI.Page
         int recordCount = dalNotices.GetRecordCount(strWhere);
         int startIndex = 0;
         int endIndex = 0;
-        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, strParams, 3, "/webadmin/NoticesList.aspx", out startIndex, out endIndex);
+        string strPager = SL.GetPagerNavigator(pageIndex, recordCount, strParams, 3, "/thisisbackstage/NoticesList.aspx", out startIndex, out endIndex);
         this.lblPagination.Text = strPager;
         #endregion
 
