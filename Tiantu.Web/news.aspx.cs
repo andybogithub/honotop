@@ -31,11 +31,11 @@ public partial class news : System.Web.UI.Page
 
 
         string strWhere = "1=1";
-        string srtOrder = "NEWSID DESC";
+        string srtOrder = "PUBDATE DESC,NEWSID DESC";
+
         if (this.cateid > 0)
         {
-            strWhere += " AND CATEID=" + this.cateid;
-            srtOrder = "SORTID DESC,NEWSID DESC";
+            strWhere += " AND CATEID=" + this.cateid; 
         }
 
         #region 分页

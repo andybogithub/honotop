@@ -18,7 +18,7 @@ public partial class company : System.Web.UI.Page
     {
         
         string strWhere = "1=1";
-        string srtOrder = "NOTICEID DESC";
+        string srtOrder = "PUBDATE DESC,NOTICEID DESC";
       
 
         #region 分页

@@ -19,7 +19,7 @@ public partial class investors : System.Web.UI.Page
 
         #region 定期报告
         string strWhere = "1=1";
-        string srtOrder = "REPORTID DESC,PUBDATE DESC";
+        string srtOrder = "PUBDATE DESC,REPORTID DESC";
 
         var list = dalReports.GetList(2, strWhere, srtOrder);
         if (list != null)
@@ -30,7 +30,7 @@ public partial class investors : System.Web.UI.Page
         #endregion
 
         #region 公司公告
-        var list2 = dalNotices.GetList(5, "", "NOTICEID DESC");
+        var list2 = dalNotices.GetList(5, "", "PUBDATE DESC,NOTICEID DESC");
         if (list2 != null)
         {
             this.RepeaterListNotice.DataSource = list2;
@@ -39,7 +39,7 @@ public partial class investors : System.Web.UI.Page
 
         #endregion
 
-        #region 公司公告
+        #region 公司链接
         var list3 = dalLinks.GetList(3, "LINKID IN (1,2,3)", "LINKID DESC");
         if (list3 != null)
         {

@@ -30,7 +30,7 @@ public partial class webadmin_NoticesList : System.Web.UI.Page
         this.lblPagination.Text = strPager;
         #endregion
 
-        var list = dalNotices.GetListByPage(strWhere, "NOTICEID DESC,PUBDATE DESC", startIndex, endIndex);
+        var list = dalNotices.GetListByPage(strWhere, "PUBDATE DESC,NOTICEID DESC", startIndex, endIndex);
         if (list != null)
         {
             this.RepeaterStores.DataSource = list;

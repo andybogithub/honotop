@@ -47,7 +47,7 @@ public partial class webadmin_NewsList : System.Web.UI.Page
         this.lblPagination.Text = strPager;
         #endregion
 
-        var list = dalNews.GetListByPage(strWhere, "NEWSID DESC,PUBDATE DESC", startIndex, endIndex);
+        var list = dalNews.GetListByPage(strWhere, "PUBDATE DESC,NEWSID DESC", startIndex, endIndex);
         if (list != null)
         {
             this.RepeaterStores.DataSource = list;

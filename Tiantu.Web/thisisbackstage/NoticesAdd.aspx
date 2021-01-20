@@ -80,7 +80,7 @@
                         </div>
 
                       
-                        <div class="control-group">
+                        <div class="control-group" style="display:none">
                             <label class="control-label">排序 :</label>
                             <div class="controls">
                                 <asp:TextBox runat="server" ID="txtSortid" Width="200px" placeholder="排序" />
