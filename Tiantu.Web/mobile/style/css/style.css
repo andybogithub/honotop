@@ -1,0 +1,351 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* { padding: 0; margin: 0; }
+html body, body, input, select, textarea, button, .ui-btn { font-size: 14px; line-height: 22px; color: #333; text-shadow: none; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; word-wrap: break-word; font-size: calc(100vw/3.2); }
+dl { -webkit-margin-before: 0; -webkit-margin-after: 0; }
+ul, li { list-style: none; }
+a { text-decoration: none; color: #333; text-shadow: none; font-weight: lighter; }
+a:hover { color: #333; }
+input { outline: 0 none; }
+
+img { max-width: 100%; }
+em { font-style: normal; }
+
+.l { float: left; }
+.r { float: right; }
+.clear { clear: both; }
+.cl:after { content: '.'; visibility: hidden; height: 0; width: 0; display: block; *display: block; _display: inline-block; clear: both; line-height: 0; font-size: 0; overflow: hidden; }
+
+body { background: #fff; max-width: 640px; margin: 0 auto; }
+.Warpper { padding-bottom: 90px; }
+header { position: relative; }
+header .logo { float: left; margin: 10px 15px; }
+header .tToolBar { position: absolute; right: 15px; top: 12px; }
+header .tToolBar .call { width: 32px; height: 32px; margin-left: 10px; float: left; }
+header .tToolBar img { width: 100%; }
+header .tToolBar .language { width: 110px; height: 30px; line-height: 30px; border: 1px solid #1e2c44; border-radius: 5px; font-size: 14px; position: absolute; right: 40px; top: 0; }
+header .tToolBar .language li { float: left; margin: 0 3px; }
+header .tToolBar .language li.on a { color: #1e2c44; }
+header.i_home { height: 60px; }
+
+
+
+footer { background: #1e2c44; height: 60px; position: relative; position: fixed; bottom: 0; left: 0; width: 100%; z-index: 99; }
+footer li { float: left; width: 20%; }
+footer li a { border-right: 1px solid rgba(255,255,255,0.1); display: block; height: 50px; padding: 5px 0; }
+footer li a span { width: 30px; height: 30px; display: block; margin: 2px auto 0; }
+footer li a span img { width: 100%; }
+footer li a b { font-size: 12px; text-align: center; display: block; color: #fff; font-weight: 400; line-height: 18px; }
+
+/* banner-css */
+.i_banner { background: url(../images/bannerbg1.jpg) no-repeat center; position: relative; overflow: hidden; background-size: cover; }
+.large-header { height: 4.8rem; position: relative; z-index: 9; }
+.lineDiv { position: absolute; top: 50%; margin-top: -1.2rem; left: 0; width: 3.2rem; height: 2.4rem; background: url(../images/bannerLine.png) no-repeat center; background-size: 100%; z-index: 1; }
+.imgDiv { position: absolute; width: 100%; height: 4.8rem; top: 50%; margin-top: -2.4rem; }
+.imgDiv img { position: absolute; z-index: 21; }
+.bg { position: fixed; width: 100%; height: 100%; top: 60px; left: 0; bottom: 0.6rem; right: 0; z-index: 1; }
+.bg img { width: 100%; height: 100%; }
+.imgDiv .ba_img1 { left: 0.38rem; top: 1.22rem; animation: scale 1.2s linear infinite normal; }
+.imgDiv .ba_img2 { left: 0.73rem; top: 1.24rem; animation: scale 1.5s linear infinite normal; }
+.imgDiv .ba_img3 { left: 1.0rem;; top: 1.15rem;; animation: scale 1.8s linear infinite normal; }
+.imgDiv .ba_img4 { left: 1.56rem; top: 1.05rem; animation: scale 1.6s linear infinite normal; }
+.imgDiv .ba_img5 { left: 1.10rem; top: 1.95rem; animation: scale 2s linear infinite normal; }
+.imgDiv .ba_img6 { left: 2.0rem; top: 1.28rem; animation: scale 1.3s linear infinite normal; }
+.imgDiv .ba_img7 { left: 2.50rem; top: 2.50rem; animation: scale 1.7s linear infinite normal; }
+.imgDiv .ba_img8 { left: 1.60rem; top: 2.70rem; animation: scale 1.4s linear infinite normal; }
+.imgDiv .ba_img9 { left: 2.45rem; top: 1.65rem; animation: scale 1.4s linear infinite normal; }
+.imgDiv .ba_img10 { left: -0.2rem; top: 1.65rem; animation: scale 2s linear infinite normal; }
+.imgDiv .ba_img11 { left: 0.10rem; top: 2.45rem; animation: scale 1.6s linear infinite normal; }
+.imgDiv .ba_img12 { left: 1.55rem; top: 1.75rem; animation: scale 1.9s linear infinite normal; }
+.imgDiv .ba_img13 { left: 1.10rem; top: 2.65rem; animation: scale 1.4s linear infinite normal; }
+.imgDiv .ba_img14 { left: 0.45rem; top: 1.90rem; animation: scale 1.5s linear infinite normal; }
+
+@keyframes scale {
+    0% { opacity: 0.2; transform: scale(0.8,0.8); }
+    50% { opacity: 1; transform: scale(1,1); }
+    100% { opacity: 0.2; transform: scale(1,1); }
+}
+
+@-webkit-keyframes name {
+    0% { opacity: 0.2; transform: scale(0.8,0.8); }
+    50% { opacity: 1; transform: scale(1,1); }
+    100% { opacity: 0.2; transform: scale(1,1); }
+}
+
+
+
+.s_banner { background: url(../images/service_bg.jpg) no-repeat center; height: 2.0rem; position: relative; overflow: hidden; }
+.slarge-header { height: 2.0rem; position: relative; z-index: 9; }
+.slineDiv { position: absolute; top: 50%; margin-top: -1.0rem; left: 0; width: 100%; height: 2.0rem; background: url(../images/service_bgline.png) no-repeat center; background-size: 100%; z-index: 1; }
+.simgDiv { position: absolute; width: 100%; height: 2.0rem; top: 50%; margin-top: -1.0rem; }
+.simgDiv img { position: absolute; }
+.simgDiv .ba_img1 { left: 0.42rem; top: 0.57rem; animation: scale 1.2s linear infinite normal; }
+.simgDiv .ba_img2 { left: 0.82rem; top: 0.25rem; animation: scale 1.5s linear infinite normal; }
+.simgDiv .ba_img3 { left: 1.28rem;; top: 0.18rem; animation: scale 1.8s linear infinite normal; }
+.simgDiv .ba_img4 { left: 2.0rem; top: 0.30rem; animation: scale 1.6s linear infinite normal; }
+.simgDiv .ba_img5 { left: 2.35rem; top: 0.57rem; animation: scale 2s linear infinite normal; }
+.simgDiv .ba_img6 { left: 2.45rem; top: 1.25rem; animation: scale 1.3s linear infinite normal; }
+.simgDiv .ba_img7 { left: 0.40rem; top: 0.8rem; animation: scale 1.7s linear infinite normal; }
+.simgDiv .ba_img8 { left: 0.10rem; top: 0.73rem; animation: scale 1.4s linear infinite normal; }
+.simgDiv .ba_img9 { left: 0.90rem; top: 0.67rem; animation: scale 1.4s linear infinite normal; }
+.simgDiv .ba_img10 { left: 1.35rem; top: 0.72rem; animation: scale 2s linear infinite normal; }
+.simgDiv .ba_img11 { left: 1.68rem; top: 0.63rem; animation: scale 1.6s linear infinite normal; }
+.simgDiv .ba_img12 { left: 1.36rem; top: 1.29rem; animation: scale 1.9s linear infinite normal; }
+.simgDiv .ba_img13 { left: 1.94rem; top: 1.25rem; animation: scale 1.4s linear infinite normal; }
+.simgDiv .ba_img14 { left: 0.65rem; top: 1.12rem; animation: scale 1.5s linear infinite normal; }
+
+@keyframes scale {
+    0% { opacity: 0.2; transform: scale(0.8,0.8); }
+    50% { opacity: 1; transform: scale(1,1); }
+    100% { opacity: 0.2; transform: scale(1,1); }
+}
+
+@-webkit-keyframes name {
+    0% { opacity: 0.2; transform: scale(0.8,0.8); }
+    50% { opacity: 1; transform: scale(1,1); }
+    100% { opacity: 0.2; transform: scale(1,1); }
+}
+
+
+
+
+/*公共部分*/
+.title { background: #1e2c44; height: 45px; }
+.title h3 { text-align: center; color: #fff; font-size: 18px; line-height: 45px; }
+.title a { position: relative; overflow: hidden; }
+.title a:before { content: ""; background: url(../images/tiantu_back.png) no-repeat; background-size: 100%; width: 9px; height: 16px; left: 15px; top: 15px; position: absolute; }
+.more { background: #26a9e0; height: 35px; line-height: 35px; text-align: center; color: #fff; cursor: pointer; font-size: 15px; }
+.more a { color: #fff; }
+.newstop { height: 40px; border-top: 1px solid #1e2c44; overflow: hidden; margin: 15px; border-left: 1px solid #1e2c44; border-bottom: 1px solid #1e2c44; }
+.newstop li { width: 24.65%; float: left; font-size: 14px; line-height: 40px; text-align: center; border-right: 1px solid #1e2c44; }
+.newstop li a { color: #1e2c44; }
+.newstop li.on { background: #1e2c44; color: #FFFFFF; }
+.newstop li.on a { color: #FFFFFF; }
+.hrtop { height: 40px; border-left: 1px solid #1e2c44; overflow: hidden; margin: 15px; border-top: 1px solid #1e2c44; border-bottom: 1px solid #1e2c44; }
+.hrtop li { width: 49.6%; float: left; font-size: 14px; line-height: 40px; text-align: center; border-right: 1px solid #1e2c44; }
+.hrtop li a { color: #1e2c44; display: block; }
+.hrtop li.on { background: #1e2c44; color: #FFFFFF; }
+.hrtop li.on a { color: #FFFFFF; }
+.pic1 { background: #427ad9; }
+.pic2 { background: #2b4f8d; }
+.pic3 { background: #26a9e0; }
+.pic4 { background: #0a6b93; }
+
+
+/*关于天图*/
+.abouttop { margin: 15px 5px 15px 15px; }
+.abouttop li { float: left; font-size: 16px; border: 1px solid #1e2c44; width: 30%; line-height: 40px; margin: 0 8px 8px 0; text-align: center; }
+.abouttop li a { color: #1e2c44; display: block; }
+.abouttop li.on { background: #f6ab00; border: 1px solid #f6ab00; }
+.abouttop li.on a { color: #fff; display: block; }
+.aboutWap { position: relative; overflow: hidden; }
+.aboutWap .main { margin: 15px; position: relative; overflow: hidden; }
+.aboutWap .main .atitle { text-align: center; margin: 15px 0; }
+.aboutWap .main p { text-indent: 2em; }
+.aboutWap .main .qmage { text-align: right; margin-top: 30px; }
+
+
+
+
+/*发展历程*/
+.developWap { position: relative; overflow: hidden; }
+.developWap .main { margin: 15px; position: relative; overflow: hidden; }
+.developWap .develist { border: 1px solid #ddd; background: #fff; margin-bottom: 15px; overflow: hidden; padding: 10px; }
+.developWap .develist .deyear { float: left; width: 80px; height: 80px; font-size: 24px; text-align: center; line-height: 80px; border-radius: 50%; color: #fff; }
+.developWap .develist .c_cont { font-size: 14px; line-height: 20px; margin-left: 85px; margin-top: 10px; }
+.developWap .restitle { margin-bottom: 15px; text-align: center; font-size: 24px; color: #6eacde; font-weight: bold; }
+.developWap .respon { float: left; width: 80px; font-size: 24px; text-align: center; height: 80px; border-radius: 50%; color: #fff; }
+.developWap .respon p { line-height: 24px; margin-top: 15px; }
+
+
+
+/*企业文化*/ /*社会责任*/
+.cultureWap { position: relative; overflow: hidden; }
+.cultureWap .main { margin: 15px; position: relative; overflow: hidden; }
+.cultureWap .main .atitle { text-align: center; margin: 15px 0; }
+.cultureWap .main p { text-indent: 2em; }
+.cultureWap .main .size { font-size: 18px; line-height: 35px; }
+.cultureWap .main .size span { font-size: 24px; line-height: 48px; }
+.cultureWap .main .qmage { text-align: right; margin-top: 30px; }
+
+
+/*管理层*/
+.manageWap { position: relative; overflow: hidden; }
+.manageWap .main { position: relative; margin: 0 15px; }
+.manageWap .main .c_list { margin-bottom: 15px; }
+.manageWap .main .c_list .pic { margin-right: 10px; }
+.manageWap .main .c_list .clist_cont h5 { font-size: 15px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; color: #1e2c44; }
+.manageWap .main .c_list .clist_cont p { line-height: 24px; font-size: 14px; height: 96px; overflow: hidden; }
+.manageWap .main .managede { width: 80px; height: 30px; line-height: 30px; color: #fff; text-align: center; background: #1e2c44; border-radius: 15px; position: relative; margin-left: 145px; }
+.manageWap .main .atitle { text-align: center; font-size: 20px; color: #1e2c44; line-height: 35px; font-weight: bold; }
+
+/*荣誉与资质*/
+.honorWap { position: relative; overflow: hidden; }
+.honorWap .main { position: relative; margin: 0 5px 0 15px; overflow: hidden; }
+.honorWap .main li { width: 47%; margin-right: 3%; float: left; }
+.honorWap .main li p { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-align: center; }
+
+
+/*天图服务*/
+.sreviceWap { position: relative; overflow: hidden; }
+.sreviceWap .main { position: relative; overflow: hidden; margin: 15px; }
+.sreviceWap .main li { height: 90px; position: relative; border: 1px solid #dddddd; width: 99%; margin-top: 10px; border-radius: 5px; background: #fff; }
+.sreviceWap .main li a { display: block; overflow: hidden; padding: 15px 20px; position: relative; }
+.sreviceWap .main li a:after { content: ""; background: url(../images/rightuit.png) no-repeat; background-size: 100%; width: 11px; height: 19px; right: 15px; top: 50%; margin-top: -15px; position: absolute; }
+.sreviceWap .main li .photo { width: 60px; height: 60px; overflow: hidden; position: relative; float: left; border-radius: 50%; margin-right: 10px; }
+.sreviceWap .main li .cont { display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-pack: center; height: 60px; }
+.sreviceWap .main li .cont h4 { font-size: 18px; display: block; }
+.sreviceWap .main li .cont p { color: #999; font-size: 14px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-right: 15px; }
+
+
+/*天图服务saas*/
+.saasWap { position: relative; overflow: hidden; }
+/*2016.9.4*/
+.saasWap .main { position: relative; overflow: hidden; padding: 15px 10px; }
+/*/2016.9.4*/
+.saasWap .main h5 { text-align: center; font-size: 18px; line-height: 35px; }
+.saasWap .main p { line-height: 24px; color: #666; font-size: 14px; text-indent: 2em; }
+
+
+/*天图金融模块*/
+.moneyWap { position: relative; overflow: hidden; }
+.moneyWap .montop { height: 40px; border-left: 1px solid #1e2c44; overflow: hidden; margin: 15px; border-top: 1px solid #1e2c44; border-bottom: 1px solid #1e2c44; }
+.moneyWap .montop li { width: 32.9%; float: left; font-size: 14px; line-height: 40px; text-align: center; border-right: 1px solid #1e2c44; }
+.moneyWap .montop li a { color: #1e2c44; display: block; }
+.moneyWap .montop li.on { background: #1e2c44; color: #FFFFFF; }
+.moneyWap .montop li.on a { color: #FFFFFF; }
+/*2016.9.4*/
+.moneyWap .main { position: relative; margin: 15px; overflow: hidden; border: 1px solid #ddd; border-radius: 10px; padding: 15px 15px 90px 15px; background: #fff; }
+.moneyWap .main h5 { font-size: 18px; line-height: 35px; text-align: center; }
+.moneyWap .main .pic { margin: 5px 0; }
+/*/2016.9.4*/
+.moneyWap .main li { width: 47%; margin: 10px 3% 10px 0; float: left; position: relative; }
+.moneyWap .main li p { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-align: center; color: #1e2c44; }
+.moneyWap .main li .download { position: absolute; right: 0; top: 0; width: 50px; height: 30px; line-height: 30px; text-align: center; color: #fff; background: #35afe2; }
+.moneyWap .main li .download a { color: #fff; }
+
+/*天图人力资源及管理*/
+.hrWap { position: relative; overflow: hidden; }
+/*2016.9.4*/
+.hrWap .main { position: relative; margin: 15px; overflow: hidden; border: 1px solid #ddd; border-radius: 10px; padding: 15px 15px 90px 15px; background: #fff; }
+.hrWap .main h5 { font-size: 18px; line-height: 35px; text-align: center; }
+.hrWapp .main .pic { margin: 5px 0; }
+/*/2016.9.4*/
+.hrWap .main li { width: 47%; margin: 10px 3% 10px 0; float: left; position: relative; }
+.hrWap .main li p { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-align: center; color: #1e2c44; }
+.hrWap .main li .download { position: absolute; right: 0; top: 0; width: 50px; height: 30px; line-height: 30px; text-align: center; color: #fff; background: #35afe2; }
+.hrWap .main li .download a { color: #fff; }
+
+/*天图商流模块*/
+.businessWap { position: relative; overflow: hidden; }
+.businessWap .main { position: relative; overflow: hidden; margin: 15px; }
+.businessWap .main .bustop p { text-indent: 2em; line-height: 24px; color: #666; margin-bottom: 15px; }
+.businessWap .main .busbot { margin: 15px 0; }
+.businessWap .busbot li { margin-bottom: 15px; background: #fff; padding: 15px; border: 1px solid #ddd; border-radius: 10px; }
+.businessWap .busbot li h5 { font-size: 18px; color: #2b4f8d; line-height: 35px; margin-left: 35%; }
+.businessWap .busbot li h5 i { width: 25px; height: 25px; float: left; display: block; margin: 5px; }
+.businessWap .busbot li h5 .c_pic1 { background: url(../images/business_2.png) center; background-size: 25px 25px; }
+.businessWap .busbot li h5 .c_pic2 { background: url(../images/business_3.png) center; background-size: 25px 25px; }
+.businessWap .busbot li h5 .c_pic3 { background: url(../images/business_4.png) center; background-size: 25px 25px; }
+
+/*天图物流模块*/
+.logisticsWap { position: relative; overflow: hidden; }
+.logisticsWap .main { position: relative; overflow: hidden; margin: 15px; }
+.logisticsWap .main .ltitle { text-align: center; }
+.logisticsWap .main .ltitle h5 { font-size: 18px; color: #000; line-height: 35px; }
+.logisticsWap .main .pic { margin: 10px 0; }
+.logisticsWap .logmain li { border-radius: 5px; height: 90px; padding: 15px 10px; color: #fff; margin-bottom: 15px; }
+.logisticsWap .logmain li .c_pic { margin-right: 10px; }
+.logisticsWap .logmain li h5 { font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.logisticsWap .logmain li p { line-height: 24px; height: 72px; overflow: hidden; }
+.logisticsWap .stomain li { border-radius: 5px; height: 100px; padding: 15px 10px; color: #fff; margin-bottom: 15px; }
+.logisticsWap .stomain li .c_pic { margin-right: 10px; }
+.logisticsWap .stomain li h5 { font-size: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.logisticsWap .stomain li p { line-height: 20px; height: 80px; overflow: hidden; }
+
+
+
+/*天图IT*/
+.itWap { position: relative; overflow: hidden; }
+.itWap .main { position: relative; overflow: hidden; margin: 15px; border: 1px solid #ddd; border-radius: 10px; background: #fff; padding: 15px; }
+.itWap .main h5 { font-size: 14px; font-weight: 400; line-height: 24px; }
+.itWap .main h5 i { width: 10px; height: 10px; background: #fbca42; border-radius: 50%; float: left; display: block; margin: 6px 3px; }
+.itWap .main li i { width: 10px; height: 10px; background: #fbca42; border-radius: 50%; float: left; display: block; margin: 6px 3px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*客户案例*/
+.caseWap { position: relative; overflow: hidden; }
+.caseWap .main { position: relative; padding: 20px 10px; }
+/*2016.9.2*/
+/*.caseWap .main .casenews{ margin-bottom:15px; border-bottom:1px solid #e5e5e5; padding-bottom:10px;}
+.caseWap .casenews dl{overflow:hidden; position:relative; }
+.caseWap .casenews dt{ float:left; width:125px;margin-right:10px; position:relative}
+.caseWap .casenews dd p{font-size:14px; color:#666;line-height:24px;height: 96px; overflow:hidden;}*/
+.caseWap .main li { width: 47%; margin: 10px 3% 10px 0; float: left; position: relative; }
+.caseWap .more { margin: 0 20px; }
+
+
+/*投资者关系定期报告*/
+.investorsWap { position: relative; overflow: hidden; }
+.investorsWap .main { position: relative; margin: 20px 5px 0 15px; overflow: hidden; }
+/*/2016.9.2*/
+.investorsWap .main li { width: 47%; margin: 10px 3% 10px 0; float: left; position: relative; }
+.investorsWap .main li p { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-align: center; color: #1e2c44; }
+.investorsWap .main li .download { position: absolute; right: 0; top: 0; width: 50px; height: 30px; line-height: 30px; text-align: center; color: #fff; background: #35afe2; }
+.investorsWap .main li .download a { color: #fff; }
+
+/*招股说明书*/
+.instructWap { position: relative; overflow: hidden; }
+/*2016.9.2*/
+.instructWap .main { position: relative; margin: 0 15px 0 15px; overflow: hidden; }
+.instructWap .instruct { background: #fff; border: 1px solid #ddd; padding: 20px 0; }
+.instructWap .instruct h5 { text-align: center; font-size: 22px; line-height: 45px; }
+.instructWap .instruct .time { font-size: 14px; text-align: center; line-height: 24px; }
+.instructWap .instruct .download { text-align: center; }
+.instructWap .instruct .download input { width: 200px; height: 30px; background: #fab600; text-align: center; color: #fff; border: none; margin: 0 20px; }
+/*/2016.9.2*/
+
+
+/*招股说明书*/
+.stockWap { position: relative; overflow: hidden; }
+.stockWap .main { position: relative; margin: 0 15px; overflow: hidden; }
+.stockWap .main .video { background: #000; }
+.stockWap .abstock { background: #fff; border: 1px solid #ddd; padding: 15px; margin: 15px 0; border-radius: 10px; }
+.stockWap .abstock h5 { text-align: center; font-size: 20px; line-height: 35px; }
+
+
+/*新闻中心*/ /*公司公告*/
+.newsWap { position: relative; overflow: hidden; }
+/*2016.9.4*/
+.newsWap .main { position: relative; margin: 20px 15px; }
+.newsWap .main .c_list { margin: 10px 0; border: 1px solid #ddd; border-radius: 10px; background: #fff; padding: 10px; }
+.newsWap .main .c_list .pic { margin-right: 5px; }
+.newsWap .main .c_list .clist_cont h5 { font-size: 15px; line-height: 30px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; padding-right: 60px; }
+/*/2016.9.4*/
+.newsWap .main .c_list .clist_cont h5 span { font-size: 12px; }
+.newsWap .main .c_list .clist_cont p { line-height: 24px; font-size: 14px; height: 48px; overflow: hidden; }
+.newsWap .newsde { margin: 10px 0; border: 1px solid #ddd; border-radius: 10px; background: #fff; padding: 10px; }
+.newsWap .newsde h5 { font-size: 18px; line-height: 35px; text-align: center; }
+.newsWap .newsde .time { color: #999; font-size: 12px; text-align: center; line-height: 24px; }
+/*.newsWap .newsde p { text-indent: 2em; }*/
+/*2016.9.2*/
+.newsWap .main .clist_cont { position: relative; }
+.newsWap .dowmload input { position: absolute; top: 0; right: 10px; width: 50px; height: 30px; line-height: 30px; background: #fab600; text-align: center; color: #fff; border: none; }
+/*/2016.9.2*/
+
+.newsWap .main .c_list .clist_cont h5 { font-size: 15px; line-height: 30px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.newsWap .main .c_list .clist_cont .words { line-height: 24px; max-height: 72px; overflow: hidden; }

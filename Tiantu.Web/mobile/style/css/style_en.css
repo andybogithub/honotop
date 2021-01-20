@@ -1,0 +1,42 @@
+﻿
+.lineDiv{background: url(../images/en/bannerLine.png) no-repeat center ;     background-size: 100%;}
+.slineDiv{background: url(../images/en/service_bgline.png) no-repeat center ;background-size: 100%;}
+.abouttop li {float: left;font-size: 14px;border: 1px solid #1e2c44;width: 31%;line-height: 20px;
+    margin: 0 5px 5px 0;text-align: center;height: 40px;}
+ .developWap .respon p {line-height: 18px;font-size: 15px;margin: 20px 5px;font-weight: bold;  }
+.imgDiv .ba_img1 {left: 0.38rem;top: 1.22rem;animation: scale 1.2s linear infinite normal;}
+.imgDiv img {position: absolute;z-index: 21;}
+.abouttop li:nth-child(5) a{word-break:break-all;}
+.investorsWap .main li .download {position: absolute;right: 0;top: 0;width: 80px;height: 30px;
+line-height: 30px;text-align: center;color: #fff; background: #35afe2;}
+.newsWap .dowmload input {position: absolute;top: 0;right: 10px;width: 70px;height: 30px;
+line-height: 30px;background: #fab600;text-align: center; color: #fff;border: none;}
+.newsWap .main .c_list .clist_cont h5 {
+    font-size: 15px;
+    line-height: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 75px;
+}
+.businessWap .busbot li h5 {
+    font-size: 18px;
+    color: #2b4f8d;
+    line-height: 35px;
+    margin-left: 0;
+    position: relative;
+    margin-left: -120px;
+    width: 240px;
+    left: 50%;
+    text-align: center;
+}
+
+.newstop li {width: 24.65%;float: left;font-size: 14px;line-height: 20px;text-align: center;
+border-right: 1px solid #1e2c44;height: 40px; }
+.newstop li:nth-child(2) a{word-break:break-all;}
+.newstop li:last-child {line-height: 40px;}
+
+
+
+
+

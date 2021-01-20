@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainEnUI.master.cs" Inherits="MainEnUI" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TIANTU LOGISTICS</title>
+
+
+
+    <%=Tiantu.DB.Common.WebControlsHelper.GetCssLink("/style/css/common.css","/style/css/sub.css","/style/css/sub_en.css") %>
+
+    <%=Tiantu.DB.Common.WebControlsHelper.GetJsLink("/js/jquery.min.js","/js/jquery.SuperSlide.2.1.1.js","/js/common.js","/js/tiantu.js") %>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="wp cl">
+                <div class="l logo">
+                    <a href="index.aspx">
+                        <img src="<%=logourl %>" style="width: 200px;" /></a>
+                </div>
+                <div class="r nav">
+                    <ul>
+                        <li><a href="index.aspx">Homepage </a><span>|</span></li>
+                        <li><a href="about.aspx">About Us </a><span>|</span></li>
+                        <li><a href="service.aspx">Our Service</a><span>|</span></li>
+                        <li><a href="case.aspx">Our Clients </a><span>|</span></li>
+                        <li><a href="investors.aspx">Investor Relations</a><span>|</span></li>
+                        <li><a href="news.aspx">News</a><span>|</span></li>
+                        <li><a href="http://shop.honotop.com/" target="_blank">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <!--/footer-->
+        <div class="footer">
+            <div class="wp">
+                <div class="copyright_wap">
+                    <div class="link">
+                        <span><a href="index.aspx">Homepage </a></span>
+                        <span>|</span>
+                        <span><a href="about.aspx">About Us </a></span>
+                        <span>|</span>
+                        <span><a href="service.aspx">Our Service</a></span>
+                        <span>|</span>
+                        <span><a href="case.aspx">Our Clients</a></span>
+                        <span>|</span>
+                        <span><a href="investors.aspx">Investor Relations</a></span>
+                        <span>|</span>
+                        <span><a href="news.aspx">News </a></span>
+                    </div>
+                    <div class="copyright">
+                        <p>
+                            <%=copyright %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

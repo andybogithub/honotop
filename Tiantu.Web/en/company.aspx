@@ -1,0 +1,77 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/en/MainEnUI.master" AutoEventWireup="true" CodeFile="company.aspx.cs" Inherits="en_company" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <script type="text/javascript">
+        navon(4);
+    </script>
+
+    <div class="tab">
+        <div class="wp cl">
+            <div class="curr">
+                <span><a href="index.aspx">TIANTU LOGISTICS</a></span> > <span><a href="investors.aspx">Investor Relations</a></span>
+                > <span><a href="company.aspx">Company announcement</a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container wp">
+        <div class="company">
+            <div class="insvesnav cl">
+                <ul>
+                    <li class="cont_1"><a href="report.aspx">Periodical reports</a></li>
+                    <li class="cont_2"><a href="company.aspx">Company announcement</a></li>
+                    <li class="cont_3"><a href="stock.aspx">Stock information</a></li>
+                    <li class="cont_4"><a href="instructions.aspx">Prospectus</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <asp:Repeater ID="RepeaterList" runat="server">
+                    <ItemTemplate>
+                        <div class="consunews">
+                            <dl>
+                                <dd>
+                                    <a href="companyde.aspx?noticeid=<%# Eval("NOTICEID") %>">
+                                        <h4><%# Eval("TITLE_EN") %></br><span><%# ((DateTime)Eval("PUBDATE")).ToString("yyyy/MM/dd")%></span></h4>
+                                    </a>
+                                    <a href="companyde.aspx?noticeid=<%# Eval("NOTICEID") %>">
+                                        <div class="download">
+                                            <a href="<%# Eval("PDFURL_EN").ToString()=="" ?Eval("PDFURL"):Eval("PDFURL_EN") %>" download>
+                                                <input type="button" />Download</a>
+                                        </div>
+                                    </a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
+
+                <%--<div class="more"><a href="#">More</a></div>--%>
+            </div>
+
+            <!--翻页-->
+            <link rel="stylesheet" type="text/css" href="/style/css/simplePagination.css" />
+            <script src="/js/jquery.simplePagination.js"></script>
+            <script>
+                $(function(){
+                    $('#light-pagination').pagination({
+                        items: <%=this.RecordCount%>,
+                        itemsOnPage: 12,
+                        currentPage:<%=this.PageIndex%>,
+                        hrefTextPrefix: 'company.aspx?pageid=',
+                        cssStyle: 'page-theme'
+                    });
+                });
+            </script>
+            <div class="pageTurning cl">
+                <div class="r" style="margin-top: 20px;">
+                    <span class="allNum"><%=this.PageIndex%> / <%=this.RecordCount/12+1%> Page |  Totle <b><%=this.RecordCount%></b> </span>
+                    <ul id="light-pagination" class="pagination"></ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</asp:Content>
+

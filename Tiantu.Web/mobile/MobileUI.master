@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MobileUI.master.cs" Inherits="mobile_MobileUI" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>天图物流</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/TouchSlide.1.0.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="style/css/style.css" />
+
+    <link href="style/css/app-style.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+    <div class="Warpper">
+        <header class="i_home">
+            <h1 class="logo"><a href="index.aspx">
+                <img src="style/images/logo.png" height="35" /></a></h1>
+            <div class="tToolBar">
+                <div class="call">
+                    <a href="tel://020-29009700">
+                        <img src="style/images/index_call.png" width="32" /></a>
+                </div>
+            </div>
+        </header>
+
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+
+        <footer>
+            <ul>
+                <li><a href="about.aspx"><span>
+                    <img src="style/images/footer_1.png"/></span><b>关于天图</b></a></li>
+                <li><a href="service.aspx"><span>
+                    <img src="style/images/footer_2.png"/></span><b>天图服务</b></a></li>
+                <li><a href="case.aspx"><span>
+                    <img src="style/images/footer_3.png"/></span><b>我们的客户</b></a></li>
+                <li><a href="report.aspx"><span>
+                    <img src="style/images/footer_4.png"/></span><b>投资者关系</b></a></li>
+                <li><a href="news.aspx"><span>
+                    <img src="style/images/footer_5.png"/></span><b>新闻中心</b></a></li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+</html>

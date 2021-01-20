@@ -1,0 +1,13 @@
+﻿.con_cb label{display: inline;}
+.controls img{margin:5px;}
+.controls .con_gallery img{margin:5px;}
+.photolist ul li {float: left;list-style-type: none;}
+.shopkeeper .table tr td img{width:180px;height:75px;}
+.stores .table tr td img{width:95px;height:102px;}
+.storesnew .table tr td img{width:95px;height:102px;}
+
+.widget-toolbar{text-align: right;margin-top: -1px;margin-bottom:0px;padding: 10px 10px 0 0;border-right: medium none;border-top: 1px solid #D5D5D5;font-weight: normal;background: #efefef;border-bottom: 1px solid #CDCDCD;height: 36px;}
+.widget-bottom{padding: 19px 20px 20px;background-color: #f5f5f5;border-top: 1px solid #e5e5e5;background: #efefef;}
+.widget-bottom .quick-actions{height:80px;}
+
+.btn{border-radius:4px;}

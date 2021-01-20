@@ -1,0 +1,198 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Share.master.cs" Inherits="_shop_web_Share" EnableViewState="false" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/style/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/style/css/sub.css" />
+    <script src="/js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/zDialog.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/common.js" type="text/javascript" charset="utf-8"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="topWrap">
+        <div class="wp cl">
+            <div class="backHome"><a href="http://www.honotop.com">返回天图首页</a></div>
+            <div class="toolBar">
+
+                <%if (null == user || user.USERID == 0)
+                    { %>
+                <!--未登录-->
+                <ul>
+                    <li>您好，欢迎来到天图在线商城！</li>
+                    <li class="tLink">
+                        <a onclick="javascript:login();">登录</a>
+                        <span>|</span>
+                        <a href="/register.html">注册</a>
+                    </li>
+                </ul>
+                <%}
+                    else
+                    { %>
+                <!-- 已登录 -->
+                <ul>
+                    <li class="wecome">您好，<%=string.IsNullOrEmpty(user.USERNAME)?user.USERTEL:user.USERNAME %>，欢迎回来！</li>
+                    <li class="tLink">
+                        <a href="/account.html">会员中心</a>
+                        <span>|</span>
+                        <a href="/logout.html" class="btnExit">退出</a>
+                    </li>
+                    <li class="tNumbder">你的钱包：<b>¥ <%=user.POINTS %></b>
+                    </li>
+                </ul>
+                <%} %>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="wp cl">
+            <h1 class="logo">
+                <a href="/">
+                    <img src="/style/images/logo.png" alt="天图物流" title="天图物流" /></a>
+                <span>在线商城</span>
+            </h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="/products.html">热门商品</a></li>
+                    <li><a href="/indianas.html">限时秒杀</a></li>
+                    <li><a href="/cases.html">合作商家</a></li>
+                    <li><a href="/help.html">帮助中心</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="footer">
+        <div class="wp cl">
+            <div class="botCon">
+                <div class="linkGroup">
+                    <i>
+                        <img src="/style/images/botIcon_1.png" alt="" /></i>
+                    <div class="con">
+                        <h4>常见问题</h4>
+                        <ul>
+                            <li><a href="/qa.html" target="_blank">纠纷处理规则</a></li>
+                            <li><a href="/qa.html" target="_blank">交易条款</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="linkGroup">
+                    <i>
+                        <img src="/style/images/botIcon_2.png" alt="" /></i>
+                    <div class="con">
+                        <h4>友情链接</h4>
+                        <ul>
+                            <li><a href="http://www.honotop.com/" target="_blank">天图物流</a></li>
+                            <li><a href="http://www.honotop.com/news.aspx" target="_blank">天图新闻</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="linkGroup">
+                    <i>
+                        <img src="/style/images/botIcon_3.png" alt="" /></i>
+                    <div class="con">
+                        <h4>特色活动</h4>
+                        <ul>
+                            <li><a href="/indianas.html">限时秒杀</a></li>
+                            <li><a href="/products.html">热门商品</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="botEWM">
+                    <strong>关注公众号，每日送福利</strong>
+                    <p>
+                        <img src="/style/images/ewmImg.jpg" />
+                    </p>
+                </div>
+            </div>
+            <div class="copyRight">
+                <span>&copy;2014-2017 Tiantu Logistic All rights reserved.   </span>
+                <span>广州市天河区珠江东路30号广州银行大厦903室，联系电话：020-29009700</span>
+                <span>技术支持：<a href="http://www.black-jet.com/" target="_blank">黑箭科技</a></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <%if (null == user || user.USERID == 0)
+        {%>
+    <script type="text/javascript">
+        function login() {
+            var diag = new Dialog();
+            diag.Width = 380;
+            diag.Height = 250;
+            diag.Title = "会员登录";
+            diag.InvokeElementId = "popuplogin";
+            diag.show();
+        }
+        function tryLogin() {
+            var _login_username = $("#login_username").val();
+            var _login_password = $("#login_password").val();
+            var _err = '';
+            if (_login_username == null || _login_username.length == 0) {
+                _err = '请输入登录账号';
+            } else if (_login_password == null || _login_password.length == 0) {
+                _err = '请输入登录密码';
+            }
+            if (_err.length > 0) {
+                alert(_err);
+                return;
+            }
+            else {
+                var _formdata = $("#loginform").serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "/trylogin.html",
+                    data: _formdata,
+                    dataType: "json",
+                    success: function (responseText) {
+                        if (responseText.errcode == 0) {
+                            document.location.reload();
+                        } else {
+                            alert(responseText.errmsg);
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+    <!-- 用户登录 -->
+    <div class="popuplogin" id="popuplogin" style="display: none;">
+        <div class="inner">
+            <form id="loginform">
+                <div class="item cl">
+                    <label><i class="ui ui_name"></i></label>
+                    <span>
+                        <input type="text" placeholder="用户名/手机" id="login_username" name="login_username" maxlength="12" /></span>
+                </div>
+                <div class="item cl">
+                    <label><i class="ui ui_pass"></i></label>
+                    <span>
+                        <input type="password" placeholder="密码" id="login_password" name="login_password" maxlength="16" /></span>
+                </div>
+                <div class="logSubBtn">
+                    <input type="button" value="登 录" id="btnLogin" onclick="javascript: tryLogin();" />
+                </div>
+                <div class="logBottom cl">
+                    <a href="/register.html" class="link_register" target="_blank">立即注册</a>
+                    <%--<a href="http://www.honotop.com/account/fpwd" class="link_pass" target="_blank">忘记密码？</a>--%>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <%} %>
+</body>
+</html>

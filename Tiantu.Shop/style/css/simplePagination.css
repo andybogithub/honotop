@@ -1,0 +1,80 @@
+/**
+* CSS themes for simplePagination.js
+* Author: Flavius Matis - http://flaviusmatis.github.com/
+* URL: https://github.com/flaviusmatis/simplePagination.js
+*/
+ul.simple-pagination {
+	list-style: none;
+}
+
+.simple-pagination {
+	display: block;
+	overflow: hidden;
+	padding: 0 5px 5px 0;
+	margin: 0;
+}
+
+.simple-pagination ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.simple-pagination li {
+	display:inline-block; *display:inline; zoom:1; margin:0 5px;
+}
+
+
+/*------------------------------------*\
+	page Theme Styles
+\*------------------------------------*/
+
+
+.page-theme a, .page-theme span {
+	display: inline-block;
+	*display: inline;
+	*padding: 5px 8px;
+	color: #999;
+	font-size:12px;
+	text-align: center;
+	border: 1px solid #ddd;
+	width: 25px;
+	height:25px;
+	line-height:25px;
+	background: #fff; 
+	font-family:"宋体",Helvetica,sans-serif;
+}
+
+.page-theme a:hover {
+	text-decoration: none;
+	background: #4b91cb;
+	border: 1px solid #4b91cb;
+	color:#fff;
+}
+
+.page-theme .current {
+	background: #4b91cb;
+	color: #FFF;
+	border-color: #4b91cb;
+	cursor: default;
+}
+.page-theme .prev,
+.page-theme .next{width: 25px;height:25px;line-height:25px; background: #fff;color: #999; display: inline-block; *display: inline; *padding: 5px 8px; border: 1px solid #ddd;text-align: center; font-family:"宋体",Helvetica,sans-serif; font-weight:bold;}
+.page-theme .current.prev,
+.page-theme .current.next{background: #ebebeb;color:#ccc;}
+
+.page-theme .ellipse {
+	background:none;
+	border:none;
+	border-radius: 0;
+	border-radius: 50%;
+	cursor: default;
+}
+
+.pageTurning{margin:40px 0 30px;}
+.pageTurning .allNum{float:left;margin-right:10px;font-size:12px;}
+.pageTurning .allNum b{color:#009ce6;}
+.pageTurning .page-theme{text-align: center; zoom:1;}
+.pageTurning .jump{float:left;border-radius:25px;height:25px;border:1px solid #009ce6;width:120px;overflow:hidden;margin-left:10px;}
+.pageTurning .jump .inpt{width:60px;padding:0 10px;height:25px;border:0 none;font-size:12px;background:none;float:left;}
+.pageTurning .jump .button{width:40px;height:25px;border-radius:0 25px 25px 0;float:right;color:#fff;background:#009ce6;cursor:pointer;}

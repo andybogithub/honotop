@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainUI.master.cs" Inherits="MainUI" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>天图物流</title>
+
+    <%=Tiantu.DB.Common.WebControlsHelper.GetCssLink("/style/css/common.css","/style/css/sub.css") %>
+
+    <%=Tiantu.DB.Common.WebControlsHelper.GetJsLink("/js/jquery.min.js","/js/jquery.SuperSlide.2.1.1.js","/js/common.js","/js/tiantu.js") %>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script>
+       
+    </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="header">
+            <div class="wp cl">
+                <div class="l logo">
+                    <a href="index.aspx">
+                        <img src="<%=logourl %>" style="width: 200px;" /></a>
+                </div>
+                <div class="r nav">
+                    <ul>
+                        <li><a href="index.aspx">首页</a><span>|</span></li>
+                        <li><a href="about.aspx">关于天图 </a><span>|</span></li>
+                        <li><a href="service.aspx">天图服务</a><span>|</span></li>
+                        <li><a href="case.aspx">我们的客户</a><span>|</span></li>
+                        <li><a href="investors.aspx">投资者关系</a><span>|</span></li>
+                        <li><a href="news.aspx">新闻中心</a><span>|</span></li>
+                        <li><a href="http://shop.honotop.com/" target="_blank">商城</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <form id="form1" runat="server">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+        <!--/footer-->
+        <div class="footer">
+            <div class="wp">
+                <div class="copyright_wap">
+                    <div class="link">
+                        <span><a href="index.aspx">首页 </a></span>
+                        <span>|</span>
+                        <span><a href="about.aspx">关于天图 </a></span>
+                        <span>|</span>
+                        <span><a href="service.aspx">天图服务</a></span>
+                        <span>|</span>
+                        <span><a href="case.aspx">客户案例</a></span>
+                        <span>|</span>
+                        <span><a href="investors.aspx">投资者关系</a></span>
+                        <span>|</span>
+                        <span><a href="news.aspx">新闻中心 </a></span>
+                    </div>
+                    <div class="copyright">
+                        <p>
+                            <%=copyright %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

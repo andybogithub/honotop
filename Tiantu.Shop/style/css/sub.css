@@ -1,0 +1,602 @@
+/*通用*/
+.topWrap{height: 40px; position: relative;}
+.topWrap .backHome{float: left; height: 40px; line-height: 40px;}
+.topWrap .backHome a{color: #2b4f8d;}
+.topWrap .toolBar{float: right;}
+.topWrap .toolBar li{float: left; height: 40px; line-height: 40px;}
+.topWrap .toolBar .tLink{padding: 0 15px;}
+.topWrap .toolBar .tLink span{padding: 0 5px;}
+.topWrap .toolBar .tLink a{color: #2b4f8d;}
+.topWrap .toolBar .tNumbder{background: url(../images/toolbg.png) no-repeat; height: 40px; width: 200px; text-align: center; color: #fff;}
+.topWrap .toolBar .tNumbder b{font-size: 18px; color: #fff; font-weight: bold;}
+
+
+.header{background: #fff; height: 80px; padding: 15px 0;}
+.header h1{float: left; width: 440px; font-weight: 400;}
+.header h1 a{float: left;}
+.header h1 span{float:left; border-left: 1px solid #e5e5e5;margin-left: 15px; padding-left: 15px; height: 80px; line-height: 80px; font-size: 30px;}
+
+
+.nav{float: right; margin-top: 15px;}
+.nav li{float: left; width: 120px; height: 50px; margin-left: 3px;}
+.nav li a{height: 50px; line-height: 50px; display: block; text-align: center; font-size: 18px; color: #666;}
+.nav li.on{background: url(../images/navbg.png) no-repeat;}
+.nav li.on a{color: #fff;}
+
+.container{margin-top: 20px;}
+
+.footer{background: #dfdfdf; margin-top: 45px;}
+.footer .botCon{overflow: hidden; position: relative; padding: 30px 0;}
+.footer .botCon .linkGroup{float: left; width: 240px; margin-right: 50px; position: relative; overflow: hidden;}
+.footer .botCon .linkGroup i{float: left;}
+.footer .botCon .linkGroup .con{margin-left: 100px;}
+.footer .botCon .linkGroup h4{font-size: 16px; font-weight: 400;}
+.footer .botCon .linkGroup ul{padding-top: 10px;}
+.footer .botCon .linkGroup li{padding: 2px 0;}
+.footer .botCon .linkGroup li a{color: #666;}
+.footer .botCon .botEWM{float: right; width: 320px; text-align: center;}
+.footer .botCon .botEWM strong{font-size: 16px; font-weight: 400; padding: 0 0 8px; display: block; text-align: center;}
+.copyRight{text-align: center; padding: 10px 0 15px; font-size: 14px; color: #999;}
+.copyRight a{color: #999;}
+.copyRight span{padding-left: 5px;}
+
+
+.boxTit{height: 60px; border-bottom: 2px solid #eee; position: relative;}
+.boxTit:after{content:' ';visibility:hidden;height:0;width:0;display:block;*display:block;_display:inline-block;clear:both; line-height:0; font-size:0;overflow:hidden;}
+.boxTit strong{float: left; border-bottom: 2px solid #2b4f8d; height: 60px; line-height: 60px; font-size: 20px; font-weight: 400;}
+.boxTit strong i{float: left; margin-right: 8px; color: #999; font-size: 24px; height: 60px; line-height: 60px;}
+.boxTit .more{position: absolute; top: 0; right: 0; height: 60px; line-height: 60px; color: #999;}
+
+.current{position: relative; color: #999;}
+.current a{color: #999;}
+
+
+/*首页*/
+.focusWrap{width:1200px; height:400px; position:relative;}
+.focusWrap .bd{width:1200px; height:400px; overflow:hidden;}
+.focusWrap .bd li{width:304px; height:396px; float:left;}
+.focusWrap .hd{width:100%;  position:absolute; z-index:1; bottom:10px; left:0; height:20px; text-align:center;}
+.focusWrap .hd ul{ text-align:center; }
+.focusWrap .hd ul li{ cursor:pointer; display:inline-block; *display:inline; zoom:1; width:20px; height:20px; text-align: center; line-height: 20px; border-radius: 50%; margin:0 5px; background: #fff; font-size: 12px;}
+.focusWrap .hd ul .on{background: #2b4f8d; color: #fff;}
+.focusWrap .icon-btn{position: absolute; top: 50%; margin-top: -30px; height: 60px; width: 30px; text-align: center; line-height: 60px; background: url(../images/focusBg.png) repeat; cursor: pointer; color: #fff; font-size: 16px;}
+.focusWrap .prev{left: 0;}
+.focusWrap .next{right: 0;}
+
+.signedWrap{width: 300px; height: 400px; position: relative; overflow: hidden; background: #fff;}
+.signedWrap .loginLink{height: 50px; border-bottom: 1px solid #f2f2f2;}
+.signedWrap .loginLink ul{margin-left: -1px;}
+.signedWrap .loginLink li{float: left; width: 50%; position: relative; overflow: hidden;}
+.signedWrap .loginLink li a{height: 50px; line-height: 50px; display: block; text-align: center; border-left: 1px solid #f2f2f2;}
+.signedWrap .loginLink .btnGoCenter a{color: #2b4f8d;}
+
+.checkIn{height: 50px; padding: 30px;}
+.checkIn a{display: block; height: 50px; line-height: 50px; text-align: center; font-size: 20px; color: #fff; background: #2b4f8d;}
+.checkIn a i{color: #fff; font-size: 30px; margin-right: 10px; display: inline-block; vertical-align: text-bottom;}
+.checkIn a span{color: #fff; font-size: 20px; display: inline-block; }
+.checkIn .checkOn{background: #ddd;}
+
+.i_newsList{border-top: 1px solid #f2f2f2; padding: 25px 20px; position: relative;}
+.i_newsList h3{font-size: 18px; color: #2b4f8d; overflow: hidden; height: 30px; line-height: 30px;}
+.i_newsList h3 i{color: #2b4f8d; margin-right: 8px; font-size: 30px; float: left;}
+.i_newsList .newsUl{background: url(../images/newbg.png) no-repeat 10px 0; padding-top: 9px;}
+.i_newsList .newsUl li{position: relative; padding-left: 35px; height: 30px; line-height: 30px;}
+.i_newsList .newsUl li a{display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; height: 30px; line-height: 30px;}
+.i_newsList .newsUl li a:hover{color: #2b4f8d;}
+.i_newsList .newLine{background: #e6e6e6;}
+
+
+/*首页秒杀*/
+.i_seckillWrap{margin-top: 25px;}
+.i_seckillWrap .seckillTitle img{display: block;}
+.i_seckillWrap .seckillGroup{position: relative; overflow: hidden; margin-top: 20px;}
+.seckillGroup ul{width: 130%;}
+.seckillGroup li{background: #fff; height: 240px; width: 530px; margin-right: 20px; padding: 30px; overflow: hidden; float: left;}
+.seckillGroup li .pic{float: left; width: 240px; height: 240px; position: relative; overflow: hidden;}
+.seckillGroup li .con{margin-left: 260px;}
+.seckillGroup li .con h4{font-size: 18px; font-weight: 400; height: 30px; line-height: 30px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.seckillGroup li .con .note{height: 24px; line-height: 24px; color: #999; font-size: 12px;}
+.seckillGroup li .con .price{height: 40px; padding: 20px 0 18px; line-height: 40px;}
+.seckillGroup li .con .price .nowPrice{font-size: 36px; color: #ff0000; font-weight: bold; line-height: 40px;}
+.seckillGroup li .con .price .oldPrice{color: #999; text-decoration: line-through; margin-left: 5px;}
+.seckillGroup li .con .btnChange{height: 40px;}
+.seckillGroup li .con .btnChange a{display: block; height: 40px; line-height: 40px; font-size: 20px; background: #2b4f8d; text-align: center; color: #fff;}
+.seckillGroup li .con .lastTime{margin-top: 20px;}
+.seckillGroup li .con .lastTime b{background: #4a4a4a;}
+.seckillGroup li .con .lastTime span{color: #4a4a4a;}
+
+.seckillGroup li.lootAll .con .price .nowPrice{color: #c4c4c4;}
+.seckillGroup li.lootAll .con .btnChange a{background: #c4c4c4;}
+
+.lastTime{position: relative; overflow: hidden;}
+.lastTime b{float: left; width: 30px; height: 40px; text-align: center; line-height: 40px; color: #fff; font-size: 24px; font-weight: bold; margin-right: 5px;}
+.lastTime span{float: left; margin-right: 5px; font-size: 24px; font-weight: bold; height: 40px; line-height: 40px; width: 8px; text-align: center; overflow: hidden;}
+
+
+/*首页推荐*/
+.i_recommendWrap{margin-top: 20px; background: #fff; padding: 0 30px 15px;}
+.homeProScroll{ width:1160px; padding-top:10px;  overflow:hidden;   }
+.homeProScroll .hd{width:100%; z-index:1; height:20px; text-align:center; overflow: hidden; margin-top: 35px;}
+.homeProScroll .hd ul{text-align: center;}
+.homeProScroll .hd ul li{ cursor:pointer; display:inline-block; *display:inline; zoom:1; width:10px; height:10px; text-align: center; line-height: 10px; border-radius: 50%; margin:0 5px; background: #efefef; font-size: 12px; line-height: 999999px;}
+.homeProScroll .hd ul li.on{background: #2b4f8d;}
+
+.homeProScroll .bd{ padding:12px 0 0 0;  }
+.homeProScroll .bd ul{ overflow:hidden; zoom:1; }
+.homeProScroll .bd li{ float:left; width:272px; margin-right:18px;}
+.homeProScroll .bd li .pic{border: 1px solid #eee; width: 270px; height: 208px; position: relative; overflow: hidden;}
+.homeProScroll .bd li .info{margin-top: 10px;}
+.homeProScroll .bd li .info h4{font-size: 16px; font-weight: 400;text-align: center;}
+.homeProScroll .bd li .info p{color: #2b4f8d; font-size: 16px; font-weight: bold;}
+
+
+/*首页夺宝*/
+.i_indianaIng{background: #fff; width: 650px; height: 630px; padding: 0 30px;}
+.i_indianaIng .boxCon{margin-top: 25px;}
+
+.indianaIng{position: relative; overflow: hidden;}
+.indianaIng ul{ width: 120%;}
+.indianaIng li{float: left; width: 272px; height: 480px; padding: 20px; border: 1px solid #eee; margin-right: 22px;}
+.indianaIng li:hover{ border: 1px solid #2b4f8d;}
+.indianaIng li .pic{width: 270px; height: 270px; position: relative; overflow: hidden;}
+.indianaIng li .con{margin-top: 10px;}
+.indianaIng li .con h4{font-size: 16px; font-weight: 400; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.indianaIng li .con .allNum{margin-top: 5px;}
+.indianaIng li .con .allNum b{font-weight: bold;}
+.indianaIng li .con .progress{background: #ededed; height: 10px; border-radius: 10px; margin-top: 15px; position: relative; overflow: hidden;}
+.indianaIng li .con .progress .progressLine{float: left; background: #ff0000; height: 10px; border-radius: 10px;}
+.indianaIng li .con .detailsNum{margin-top: 10px;}
+.indianaIng li .con .detailsNum span{width: 50%;}
+.indianaIng li .con .detailsNum .r{text-align: right;}
+.indianaIng li .con .detailsNum i{font-size: 12px; display: block; line-height: 16px;}
+.indianaIng li .con .detailsNum em{display: block; color: #999; font-size: 12px; line-height: 16px;}
+.indianaIng li .con .joinBtn{margin-top: 25px; padding: 0 30px;}
+.indianaIng li .con .joinBtn a{background: #2b4f8d; display: block; height: 40px; line-height: 40px; font-size: 18px; text-align: center; color: #fff;}
+
+.i_hotChange{width: 410px; background: #fff; padding: 0 30px; height: 630px;}
+.i_hotChange .boxCon{margin: 7px 0 0;}
+
+.hotChange{position: relative; overflow: hidden;}
+.hotChange ul{margin-top: -1px;}
+.hotChange li{padding: 18px 0; border-top: 1px solid #e5e5e5; position: relative; overflow: hidden;}
+.hotChange li .pic{float: left; width: 100px; height: 100px; position: relative; overflow: hidden; border: 1px solid #eee;}
+.hotChange li .con{margin-left: 120px;}
+.hotChange li .con h4{font-size: 16px; font-weight: 400; color: #2b4f8d;}
+.hotChange li .con h4 a{color: #2b4f8d;}
+.hotChange li .con .progressRow{position: relative; overflow: hidden; padding-bottom: 5px;}
+.hotChange li .con .progress{background: #ededed; height: 10px; border-radius: 10px; margin-top: 6px; position: relative; overflow: hidden; float: left; width: 200px;}
+.hotChange li .con .progress .progressLine{float: left; background: #ff0000; height: 10px; border-radius: 10px;}
+.hotChange li .con .progressRow em{margin-left: 8px; color: #999; font-size: 12px;}
+
+
+/*购买商品*/
+.productWrap{background: #fff; padding: 30px;}
+.proMenu{position: relative; overflow: hidden;}
+.proMenu li{float: left; width: 120px; height: 50px; border: 1px solid #ddd; margin-right: 10px;}
+.proMenu li a{display: block; text-align: center; height: 50px; line-height: 50px; font-size: 18px; color: #999;}
+.proMenu li a:hover{color: #2b4f8d;}
+.proMenu li.on a{color: #2b4f8d;}
+
+.proMain{position: relative; overflow: hidden; margin-top: 10px;}
+.proMain ul{width: 110%;}
+.proMain li{float: left; width: 270px; height: 410px; margin: 20px 17px 0 0; border: 1px solid #eee;}
+.proMain li:hover{border: 1px solid #2b4f8d;}
+.proMain li .pic{position: relative; overflow: hidden; width: 270px; height: 270px; border-bottom: 1px solid #eee;}
+.proMain li .info{padding: 10px 20px;}
+.proMain li .info h4{font-size: 16px; font-weight: 400;}
+.proMain li .info p{color: #2b4f8d; font-size: 16px; font-weight: bold; padding-top: 3px;}
+.proMain li .changeBtn{padding: 7px 20px 0;}
+.proMain li .changeBtn a{background: #2b4f8d; height: 40px; line-height: 40px; text-align: center; display: block; color: #fff; font-size: 18px;}
+
+
+/*购买详情*/
+.proDeTop{background: #fff; padding: 20px 30px 30px;}
+.proDeTop .proDeInfo{margin-top: 20px;}
+.proDeInfo{position: relative; overflow: hidden;}
+.proDeInfo .dePic{float: left; width: 350px; height: 350px; border: 1px solid #ddd;}
+.proDeInfo .deInfoCon{margin-left: 400px;}
+.deInfoCon h3{font-size: 18px; margin-top: 5px;}
+.deInfoCon .infoUl{border-top: 1px solid #ddd; padding-top: 5px; margin-top: 15px; }
+.deInfoCon .infoUl .item{margin-top: 10px; position: relative; overflow: hidden;}
+.deInfoCon .infoUl .item strong{float: left; width: 80px; font-weight: 400; line-height: 30px; font-size: 16px;}
+.deInfoCon .infoUl .item .itemRight{margin-left: 100px; line-height: 30px; font-size: 16px;}
+.deInfoCon .infoUl .changePrice .itemRight span{font-weight: bold; color: #2b4f8d; font-size: 20px;}
+.deInfoCon .infoUl .price .itemRight span{text-decoration: line-through;}
+.deInfoCon .infoUl .logistics select{height: 30px; border: 1px solid #ddd;}
+.deInfoCon .changeBtn{margin-top: 40px;}
+.deInfoCon .changeBtn a{width: 200px; height: 50px; line-height: 50px; background: #2b4f8d; font-size: 22px; color: #fff; text-align: center; display: block;}
+.exchangeNum{width: 130px; height: 30px; position: relative;}
+.exchangeNum i{width: 28px; height: 28px; border: 1px solid #ddd; background: #f5f5f5; position: absolute; text-align: center; line-height: 28px; font-size: 16px; cursor: pointer;}
+.exchangeNum .minus{left: 0;}
+.exchangeNum .plus{right: 0;}
+.exchangeNum .count{width: 70px; height: 28px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; margin: 0 0 0 30px; text-align: center;}
+.exchangeNum .disabled{color: #999;}
+
+.proDeMain{background: #fff; padding: 0 30px 30px; margin-top: 20px; min-height: 600px;}
+.proDeMain .deMainTitle{border-bottom: 2px solid #ddd; height: 60px;}
+.proDeMain .deMainTitle strong{float: left; height: 60px; line-height: 60px; font-size: 20px; font-weight: 400; border-bottom: 2px solid #2b4f8d; padding: 0 8px;}
+.proDeMain .deParameter{border: 1px dashed #ddd; background: #f9f9f9; padding: 10px 20px; position: relative; overflow: hidden; margin-top: 20px;}
+.proDeMain .deParameter li{float: left; width: 50%; height: 30px; line-height: 30px; color: #666;}
+.proDeMain .deIntroduce{margin-top: 20px;}
+
+
+/*填写地址*/
+.popupAddress{display: none;}
+.popupAddress .item{position: relative; overflow: hidden; margin-bottom: 20px;}
+.popupAddress .item .itemLeft{float: left; width: 100px; line-height: 30px;}
+.popupAddress .item .itemLeft i{color: #ff0000;}
+.popupAddress .item .itemRight{margin-left: 110px; position: relative; overflow: hidden;}
+.popupAddress .item .itemRight select{height: 30px; margin-right: 5px; border: 1px solid #ddd;}
+.popupAddress .item .itemRight .inputText{width: 240px;}
+.addressForm .item .itemRight label input{vertical-align: middle; margin-right: 5px;}
+.popupAddress .item .note{color: #9990; padding-top: 5px;}
+.popupAddress .item .submitBtn{padding-top: 15px;}
+.popupAddress .item .submitBtn a{background: #2b4f8d; width: 100px; height: 40px; line-height: 40px; display: block; color: #fff; font-size: 18px; text-align: center;}
+
+.textareaDiv{border: 1px solid #ddd; padding:5px 8px;}
+.textareaDiv textarea{width: 100%; border: none;}
+.inputText{border: 1px solid #ddd; padding:0 8px; height: 30px;}
+.inputText input{width: 100%; height: 28px; line-height: 28px;}
+
+._DialogTable .popupAddress{display: block;}
+
+
+/*商品购买*/
+.formTitle{height: 60px; line-height: 60px; position: relative; overflow: hidden;}
+.formTitle strong{font-size: 18px; font-weight: 400;}
+.formTitle .addBtn{position: absolute; right: 5px; color: #2b4f8d;}
+
+.table{width: 100%; border-collapse: collapse; border: 1px solid #ddd;}
+.table th,
+.table td{ border-bottom: 1px solid #ddd;}
+.table th{background: #f5f5f5; padding: 7px 15px;}
+.table td{padding: 12px 15px; text-align: center;}
+.table .operate a,
+.table .operate span{margin: 0 8px; color: #999;}
+.table .operate a{color: #2b4f8d;}
+
+
+.formAddress{background: #fff; position: relative; padding: 0 30px 30px;}
+.formAddress .formCon .table .col_1{width: 50px;}
+.formAddress .formCon .table .col_7{width: 200px;}
+
+
+.formLogistics{background: #fff; position: relative; padding: 0 30px 30px; margin-top: 20px;}
+.formLogistics .item{position: relative; overflow: hidden; padding: 8px 0;}
+.formLogistics .itemL{float: left; width: 85px;}
+.formLogistics .itemR{margin-left: 95px;}
+.formLogistics .itemR label{margin-right: 20px;}
+.formLogistics .itemR label input{vertical-align: middle; margin-right: 5px;}
+
+.formProduct{background: #fff; position: relative; padding: 0 30px 30px; margin-top: 20px;}
+.formProduct .formCon .table .col_1{width: 400px; text-align: left;}
+.formProduct .formCon .table .col_1 .pic{float: left; border: 1px solid #ddd; width: 60px; height: 60px; position: relative; overflow: hidden;}
+.formProduct .formCon .table .col_1 .con{margin-left: 75px;}
+
+.formOrder{background: #f5f5f5; border: 1px solid #ddd; border-top: none; padding: 20px 15px; overflow: hidden;}
+.formOrder .orderL{float: left; width: 40%;}
+.formOrder .orderL .btnLink{color: #2b4f8d; margin-left: 30px;}
+.formOrder .orderL .btnBack{color: #999;}
+.formOrder .orderR{float: right; width: 40%; text-align: right;}
+.formOrder .orderR p{text-align: right;}
+.formOrder .orderR p b{color: #2b4f8d;}
+.formOrder .orderR .buyBtn{margin-top: 10px; position: relative; overflow: hidden;}
+.formOrder .orderR .buyBtn span{float: right; margin-right: 10px; line-height: 40px;}
+.formOrder .orderR .buyBtn a{background: #2b4f8d; width: 120px; height: 40px; line-height: 40px; text-align: center; color: #fff; font-size: 18px; float: right;}
+
+
+/*夺宝*/
+.indianaStep{background: #fff;}
+.indianaStep img{display: block;}
+
+.indianaWrap{background: #fff; margin-top: 20px; padding: 0 30px;}
+
+.indianaList{}
+.indianaList{position: relative; overflow: hidden;}
+.indianaList ul{ width: 120%;}
+.indianaList li{float: left; width: 320px; height: 540px; padding: 20px; border: 1px solid #eee; margin-right: 22px; margin-top: 30px; position: relative;}
+.indianaList li:hover{ border: 1px solid #2b4f8d;}
+.indianaList li .pic{width: 320px; height: 320px; position: relative; overflow: hidden;}
+.indianaList li .con{margin-top: 10px;}
+.indianaList li .con h4{font-size: 16px; font-weight: 400; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+.indianaList li .con .allNum{margin-top: 5px;}
+.indianaList li .con .allNum b{font-weight: bold;}
+.indianaList li .con .progress{background: #ededed; height: 10px; border-radius: 10px; margin-top: 15px; position: relative; overflow: hidden;}
+.indianaList li .con .progress .progressLine{float: left; background: #ff0000; height: 10px; border-radius: 10px;}
+.indianaList li .con .detailsNum{margin-top: 10px;}
+.indianaList li .con .detailsNum span{width: 50%;}
+.indianaList li .con .detailsNum .r{text-align: right;}
+.indianaList li .con .detailsNum i{font-size: 12px; display: block; line-height: 16px;}
+.indianaList li .con .detailsNum em{display: block; color: #999; font-size: 12px; line-height: 16px;}
+.indianaList li .status{margin-top: 20px;}
+.indianaList li .status .joinBtn{ padding: 10px 30px 0;}
+.indianaList li .status .joinBtn a{background: #2b4f8d; display: block; height: 40px; line-height: 40px; font-size: 18px; text-align: center; color: #fff;}
+.indianaList li .status  .endLink a{background: #c4c4c4;}
+.indianaList li .countDownDiv{position: relative; overflow: hidden; padding-top: 10px;}
+.indianaList li .countDownDiv strong{float: left; font-weight: 400; line-height: 40px; font-size: 13px;}
+.indianaList li .countDownDiv .lastTime{float: right;}
+.indianaList li .countDownDiv .lastTime b{background: #2b4f8d;}
+.indianaList li .countDownDiv .lastTime span{color: #2b4f8d;}
+.indianaList li .readyTag{position: absolute; top: 0; left: 0; background: url(../images/zhunbeibg.png) no-repeat; width: 150px; height: 40px; line-height: 40px; text-align: center; color: #fff; z-index: 6; font-size: 20px;}
+.indianaList li .endbg{position: absolute; width: 360px; height: 340px; top: 0; left: 0; background: url(../images/whitebg.png) repeat; z-index: 6;}
+.indianaList li .endbg img{position: absolute; left: 50%; top: 50%; margin: -80px 0 0 -80px;}
+.indianaList li .statusEnd{position: relative; padding-right: 85px;}
+.indianaList li .statusEnd p{font-size: 12px;}
+.indianaList li .statusEnd p b{color: #0088ff; font-weight: 400;}
+.indianaList li .statusEnd .endLink{position: absolute; right: 0; top: 0;}
+.indianaList li .statusEnd .endLink a{width: 80px; height: 30px; line-height: 30px; text-align: center; display: block; color: #fff; background: #ccc;}
+
+
+/*帮助中心*/
+.helpWrap{position: relative; overflow: hidden;}
+.helpSide{float: left; width: 200px; background: #fff; min-height: 760px;}
+.helpSide .sideTit{border-top: 5px solid #2b4f8d; height: 50px; line-height: 50px; font-size: 18px; color: #2b4f8d; padding: 0 20px; border-bottom: 1px solid #e5e5e5;}
+.helpMenu li{border-bottom: 1px solid #e5e5e5; height: 40px; position: relative;}
+.helpMenu li a{height: 40px; line-height: 40px; padding: 0 20px;}
+.helpMenu li a:after{content: "\e901"; font-family: 'icomoon'; position: absolute; right: 15px; top: 0; height: 40px; line-height: 40px; color: #ccc; font-size: 14px; font-weight: bold;}
+
+.helpContent{float: right; width: 920px; background: #fff; min-height: 760px; padding: 0 30px;}
+.helpContent .helpTit{height: 60px; line-height: 60px; border-bottom: 2px solid #ddd;}
+.helpContent .helpTit strong{font-size: 18px; border-left: 5px solid #2b4f8d; padding-left: 8px; font-weight: 400;}
+.helpContent .helpMain{padding: 30px 0 40px;}
+
+
+
+/*价格中心*/
+.centerInfo{position: relative; overflow: hidden; background: #fff;}
+.centerMainWrap {background: #fff; position: relative; margin-top: 20px; padding: 0 30px;}
+.centerMainWrap .centerTitle{height: 60px; border-bottom: 2px solid #eee; position: relative;}
+.centerMainWrap .centerTitle:after{content:' ';visibility:hidden;height:0;width:0;display:block;*display:block;_display:inline-block;clear:both; line-height:0; font-size:0;overflow:hidden;}
+.centerMainWrap .centerTitle strong{float: left; border-bottom: 2px solid #2b4f8d; height: 60px; line-height: 60px; font-size: 20px; font-weight: 400;}
+.centerMainWrap .centerMain{padding: 25px 0;}
+.centerMainWrap .table th{color: #999;}
+
+.userInfo{float: left; width: 500px; margin-left: 30px; padding: 20px 0; overflow: hidden;}
+.userInfo .pic{float: left; position: relative; overflow: hidden; width: 120px; height: 120px; border-radius: 50%;}
+.userInfo .pic span{background: url(../images/blackbg.png) repeat; height: 30px; width: 120px; position: absolute; bottom: 0; left: 0; text-align: center; line-height: 30px; color: #fff;}
+.userInfo .con{margin-left: 145px;}
+.userInfo .con h4{font-size: 18px; padding: 40px 0 15px; font-weight: 400;}
+.userInfo .con p{color: #2b4f8d; font-size: 16px; line-height: 24px; overflow: hidden;}
+.userInfo .con p span{float: left; line-height: 24px;}
+.userInfo .con .btnJF{width: 70px; height: 24px; border-radius: 24px; border: 1px solid #2b4f8d; text-align: center; line-height: 24px; float: left; margin-left: 20px; font-size: 12px; color: #2b4f8d;}
+
+.centerMenu{width: ;}
+.centerMenu li{width: 160px; height: 160px; background: #fafafa; border-left: 1px solid #ededed; float: left;}
+.centerMenu li a{display: block; padding: 32px 0 0; text-align: center;}
+.centerMenu li a i{width: 60px; height: 60px; border-radius: 60px; border: 2px solid #2b4f8d; display: block; margin: 0 auto; text-align: center; line-height: 60px; color: #2b4f8d; font-size: 28px;}
+.centerMenu li a p{color: #666; padding-top: 8px;}
+
+
+/*订单*/
+.centerOrderWrap .table td.col_1{width: 400px; text-align: left;}
+.centerOrderWrap .table .col_1 .pic{float: left; border: 1px solid #ddd; width: 60px; height: 60px; position: relative; overflow: hidden;}
+.centerOrderWrap .table .col_1 .con{margin-left: 75px;}
+
+/*夺宝*/
+.centerIndianaWrap .table td.col_1{width: 400px; text-align: left;}
+.centerIndianaWrap .table .col_1 .pic{float: left; border: 1px solid #ddd; width: 60px; height: 60px; position: relative; overflow: hidden;}
+.centerIndianaWrap .table .col_1 .con{margin-left: 75px;}
+.centerIndianaWrap .timeIng{color: #2b4f8d;}
+
+/*金币明细*/
+.centerIntegralWrap .table td.col_1{width: 400px; text-align: left;}
+.centerIntegralWrap .table td.col_1 a{color: #0088FF;}
+.centerIntegralWrap .table .jia{color: #0dbc04;}
+.centerIntegralWrap .table .jian{color: #2b4f8d;}
+
+/*地址修改*/
+.centerAddressWrap{padding: 0 30px 20px;}
+.centerAddressWrap .tinote{padding-bottom: 10px;}
+.centerAddressWrap .tinote b{color: #2b4f8d;}
+.centerAddressWrap .addBtn{margin-top: 40px;}
+.centerAddressWrap .addBtn a{width: 170px; height: 40px; line-height: 40px; color: #fff; font-size: 18px; display: block; background: #2b4f8d; text-align: center;}
+
+
+.addressForm{margin-top: 40px;}
+.addressForm .item{position: relative; overflow: hidden; margin-bottom: 20px;}
+.addressForm .item .itemLeft{float: left; width: 100px; line-height: 30px;}
+.addressForm .item .itemLeft i{color: #ff0000;}
+.addressForm .item .itemRight{margin-left: 110px; position: relative; overflow: hidden;}
+.addressForm .item .itemRight select{height: 30px; margin-right: 5px; border: 1px solid #ddd;}
+.addressForm .item .itemRight .inputText{width: 240px;}
+.addressForm .item .itemRight label input{vertical-align: middle; margin-right: 5px;}
+.addressForm .item .note{color: #9990; padding-top: 5px;}
+.addressForm .item .submitBtn{padding-top: 15px;}
+.addressForm .item .submitBtn a{background: #2b4f8d; width: 100px; height: 40px; line-height: 40px; display: block; color: #fff; font-size: 18px; text-align: center;}
+
+
+
+/*2016.9.28*/
+.header h1{width: 480px; }
+
+/*会员登录弹窗*/
+.ui{background-image: url(../images/ui.png);background-repeat: no-repeat;}
+.popuplogin .inner{width: 340px;position: relative;margin-left: -170px;left: 50%;}
+.popuplogin .item{margin:20px 0 0;border:1px solid #ddd;height:35px;}
+.popuplogin .item label{background:#eeeded;width:45px;float:left;height:35px;border-right:1px solid #ddd;position:relative;}
+.popuplogin .item .ui_name{background-position:-200px -126px;width:18px;height:22px;position:absolute;left:50%;top:50%;margin:-11px 0 0 -9px;}
+.popuplogin .item .ui_pass{background-position:-238px -130px;width:16px;height:20px;position:absolute;left:50%;top:50%;margin:-10px 0 0 -8px;}
+.popuplogin .item span{display:block;margin-left:55px;*margin-left:0;margin-right:5px;height:35px;*line-height:35px;}
+.popuplogin .item span input{display:block;width:100%;height:35px;border:0 none;*line-height:35px;background:none;}
+.popuplogin .logSubBtn{margin:30px 0 0;}
+.popuplogin .logSubBtn input{background:#2b4f8d;height:48px;border:1px solid #2b4f8d;font-size:16px;color:#fff;display:block;width:100%;cursor:pointer;}
+.popuplogin .logBottom {margin:10px 0 0;overflow:hidden;}
+.popuplogin .logBottom a{font-size:14px;}
+.popuplogin .logBottom .link_pass{float:right; text-decoration:underline;color:#666;}
+.popuplogin .logBottom .link_register{float:left;font-size:14px;color: #2b4f8d;}
+
+/*最新消息*/
+.newslistMain li{height: 58px;border-bottom: 1px dashed #ddd;line-height: 59px;font-size: 14px;}
+.newslistMain li i{color: #fff;width: 90px;height: 25px;line-height: 25px;text-align: center;font-size: 12px;float: left;margin-top: 18px;}
+.newslistMain li .newslistbg1{background: url(../images/newslistbg_1.png) no-repeat;}
+.newslistMain li .newslistbg2{background: url(../images/newslistbg_2.png) no-repeat;}
+.newslistMain li span{padding-left: 15px;}
+.newsdemain{margin-top: 30px;}
+
+/*订单页*/
+.orderWrap .curr{color: #999;}
+.orderWrap .curr span a{color: #999;}
+.orderWrap .orderInfomail{position: relative;overflow: hidden;background: #fff;margin-top: 10px;
+border-top: 3px solid #ffba14;}
+.orderWrap .stateInfo{width: 340px;padding: 20px 0;text-align: center;}
+.orderWrap .stateInfo .infosucces{color: #71b247;font-size: 24px;margin-top: 30px;}
+.orderWrap .stateInfo p{font-size: 14px;color: #999;}
+.orderWrap .orderaddress{padding: 15px 20px;border-left: 1px solid #ddd;overflow: hidden;}
+.orderWrap .orderaddress ul{width: 400px;float: left;}
+.orderWrap .orderaddress li{line-height: 30px;}
+.orderWrap .orderaddress li b{width: 80px;display: inline-block;font-weight:400 ;}
+.orderWrap .orderaddress li span{text-align: left;display:inline-block}
+.orderWrap .orderaddress li span a{color: #2b4f8d;}
+.orderWrap .orderTitle{padding-top: 20px;}
+.orderWrap .orderTitle strong{font-size: 20px;font-weight: 400;}
+.orderWrap  .allMain{padding: 20px 30px;margin-top: 20px;background: #fff;position: relative;
+overflow: hidden;}
+.orderWrap  .callqq{position:relative;overflow:hidden;margin:10px 30px;}
+.orderWrap  .callqq a{height:30px;font-size:16px;color:#333;width:100px;position:relative;}
+.orderWrap  .callqq a span{display:block;line-height:30px;padding-left:30px;}
+.orderWrap  .callqq .call_qq{float:left;background:#f1f1f1;border:1px solid #ddd;border-radius: 5px;}
+.orderWrap  .callqq .call_qq i{background-position:-165px -520px;width:18px;height:18px;
+position:absolute;left:5px;top:50%;margin-top:-8px;}
+.moneyall li{line-height:24px ;}
+.moneyall li b{font-weight: 400;width:100px;display: inline-block;text-align: right;}
+.moneyall li span{text-align: right;display: inline-block;width: 150px;}
+.moneyall .last b{font-size: 18px;}
+.moneyall .last span{color: #2b4f8d;}
+/*/2016.9.28*/
+
+
+
+
+/*2016.10.9*/
+/*夺宝详情*/
+.deInfoCon .lottery {border-top: 1px solid #ddd;padding-top: 5px;margin-top: 15px;}
+.deInfoCon .luckynumber{background: #2b4f8d;height: 80px;margin: 15px 0;overflow: hidden;}
+.deInfoCon .luckynumber .luckymain{width: 240px;height: 30px;background: #ffe400;
+border-radius: 10px;margin: 25px 30px ;}
+.deInfoCon .luckynumber .luckymain li{float: left;line-height: 30px;font-size: 14px;color: #2b4f8d;padding: 0 18px;}
+.deInfoCon .luckynumber .luckymain .first{border-right:1px solid #2b4f8d ;font-size: 12px;}
+.deInfoCon .luckynumber .luckyleft{line-height: 80px;color: #fff;font-size: 36px;}
+.deInfoCon .luckmain h5{font-size: 14px;}
+.deInfoCon .luckmain span{color: #2b4f8d;}
+.deInfoCon .luckmain p{line-height: 30px;color: #999;}
+.deInfoCon .nopartake{background: #f0f0f0;height: 50px;width: 170px;line-height: 50px;color: #666;text-align: center;}
+
+.indianaDeMain {background: #fff;padding:30px;margin-top: 20px;*min-height: 900px;}
+.indianaDeMain .navdiv{border: 1px solid #ddd;height: 50px;}
+.indianaDeMain .navdiv li{width: 150px;line-height: 50px;color: #999;float: left;
+text-align: center;border-right: 1px solid #ddd;font-size: 20px;}
+.indianaDeMain .navdiv li a{color: #999;}
+.indianaDeMain .navdiv li.on{background:#2b4f8d;}
+.indianaDeMain .navdiv li.on a{color: #fff;}
+.indianaDeMain .deParameter{border: 1px dashed #ddd; background: #f9f9f9; padding: 10px 20px; position: relative; overflow: hidden; margin-top: 20px;}
+.indianaDeMain .deParameter li{float: left; width: 50%; height: 30px; line-height: 30px; color: #666;}
+.indianaDeMain .deIntroduce{margin-top: 20px;}
+
+.indianaDeMain .deMainTitle{border-bottom: 2px solid #ddd; height: 60px;}
+.indianaDeMain .deMainTitle strong{float: left; height: 60px; line-height: 60px; font-size: 20px; font-weight: 400; border-bottom: 2px solid #2b4f8d; padding: 0 8px;}
+
+.indianaDeMain .rulenumber{background: url(../images/rulenumber1.jpg) no-repeat;
+height: 140px;margin: 30px 0;position: relative;}
+.indianaDeMain .rulenumber .people{position: absolute;left: 800px;top:20px;width: 97px;height: 97px;
+color: #2b4f8d;font-size: 18px;text-align: center;border: 3px solid #ffc28d;border-radius: 50%;background: #ffe9d4;}
+.indianaDeMain .rulenumber p{margin-top: 25px;}
+.indianaDeMain .rulenumber span{color:#333;font-size: 14px;}
+.indianaDeMain .rulenumber .first{position: absolute;left: 960px;top:20px;width: 97px;height: 97px;
+color: #2b4f8d;font-size: 18px;text-align: center;border: 3px solid #ffc28d;border-radius: 50%;background: #ffe9d4;}
+.indianaDeMain .rulemain h5{font-size: 16px;line-height: 30px;color: #333;}
+.indianaDeMain .rulemain p{line-height: 24px;}
+.indianaDeMain .rulemain .bottom{margin-top: 30px;}
+.indianaDeMain .reconrdCon{position: relative;margin-top: 30px;}
+.indianaDeMain .reconrdCon .reconrdright{position: absolute;width: 50px;height: 700px;
+left: 140px; background: url(../images/record.png) no-repeat;}
+.indianaDeMain .recondtime{padding-top: 75px;min-height: 600px;}
+.indianaDeMain .recondtime li{height: 40px;line-height: 40px;color: #999;position: relative;}
+.indianaDeMain .recondtime li b{width: 130px;text-align: right;display: inline-block;margin-right: 70px;}
+.indianaDeMain .recondtime li strong{font-size: 14px;color: #0088ff;}
+.indianaDeMain .recondtime li span{font-size: 14px;color: #333;}
+.indianaDeMain .recondtime .date b{font-size: 18px;color: #333;}
+.indianaDeMain .recondtime .dataimg{position: absolute;left: 158px;top: 13px;background: #ddd;
+width: 14px;height: 14px;border-radius: 50%;}
+.indianaDeMain .recondtime .timeimg{position: absolute;left: 158px;top: 13px;background: #fff;
+width: 13px;height: 13px;border-radius: 50%;border: 1px solid #ddd;}
+.proDeInfo .indianaleft{width: 450px;}
+.proDeInfo .indianaleft .title p{font-size: 16px;line-height: 30px;}
+.proDeInfo .indianaleft .title span{font-size: 12px;color: #999;padding-left: 10px;}
+.proDeInfo .progressBar{background: #ededed;height: 10px;border-radius: 5px;
+margin: 10px 0;position: relative;overflow: hidden;}
+.proDeInfo .progressBar .joinprogress{width: 30%;background: #ff0000;position: absolute;
+border-radius: 5px;height: 10px;}
+.proDeInfo .progresstxt{position: relative;overflow: hidden;}
+.proDeInfo .progresstxt p{font-size: 12px;color: #999;}
+.proDeInfo .progresstxt p b{color: #333;font-size: 12px;font-weight: 400;padding-left: 10px;}
+.proDeInfo .indianaleft .item b{color: #2b4f8d;font-size:14px;font-weight: 400;padding-left: 15px;}
+
+.indianader .indianaright .cuelogin{width: 250px;background: #f0f0f0;padding: 10px 0;
+text-align: center;margin-top: 15px;}
+.indianader .indianaright p{color: #666;font-size: 14px;}
+.indianader .indianaright .cuelogin b{color: #2b4f8d;font-size: 16px;}
+.indianader .indianaright .loginpart{width: 250px;background: #f0f0f0;padding: 10px 0;
+text-align: center;margin-top: 15px;}
+.indianader  .countdown{width: 240px;text-align: center;}
+.indianader  .countdown .countDownDiv {position: relative;overflow: hidden;padding-top: 10px;}
+.indianader  .countdown .countDownDiv .lastTime b {background: #4a4a4a;}
+.indianader  .countdown .countDownDiv strong{font-size: 16px;line-height: 40px;}
+.indianader .indianaright .countmain{width: 240px;background: #f0f0f0;padding: 10px 0;
+text-align: center;margin-top: 15px;}
+.indianader .partin{float: left;margin-right: 5px;}
+.indianader .explian{font-size: 14px;color: #999;line-height: 30px;}
+.indianader .nochangeBtn{width: 200px;height: 50px;line-height: 50px;background: #999;font-size: 22px;color: #fff;
+text-align: center;margin-top: 20px;}
+
+/*购买成功*/
+.prosuccessWrap .prosucctop{background: #fff;padding: 30px 0;margin-bottom: 20px;}
+.prosuccessWrap .prosucctop .successicon{text-align: center;margin-bottom: 30px;}
+.prosuccessWrap .prosucctop .successicon p{line-height: 30px;font-size: 20px;color: #07bf3f;}
+.prosuccessWrap .prosucctop .successicon span{line-height: 24px;font-size: 14px;color: #333;}
+.prosuccessWrap .prosucctop .succhref a{color: #2b4f8d;line-height: 44px;margin-right: 15px;}
+.prosuccessWrap .proinfor{margin: 0 30px;border-top: 1px solid #eee;}
+.prosuccessWrap .proinfor .title{line-height: 50px;font-size: 18px;}
+.prosuccessWrap .prosuccbot{background: #fff;padding:0 30px  30px;}
+.prosuccessWrap .prosuccbot ul{width: 110%;}
+.prosuccessWrap .prosuccbot li{float: left; width: 272px; height: 350px; margin: 20px 17px 0 0; }
+.prosuccessWrap .prosuccbot li:hover{border: 1px solid #2b4f8d;}
+.prosuccessWrap .prosuccbot li .pic{position: relative; overflow: hidden; width: 270px; height: 270px; border: 1px solid #eee;}
+.prosuccessWrap .prosuccbot li .info{padding: 10px 20px;}
+.prosuccessWrap .prosuccbot li .info h4{font-size: 16px; font-weight: 400;}
+.prosuccessWrap .prosuccbot li .info p{color: #2b4f8d; font-size: 16px; font-weight: bold; padding-top: 3px;}
+.prosuccessWrap .prosuccbot .title {height: 60px;border-bottom: 2px solid #eee;position: relative;}
+.prosuccessWrap .prosuccbot .title strong {float: left;border-bottom: 2px solid #2b4f8d;height: 60px;
+ line-height: 60px;font-size: 20px;font-weight: 400;}
+.prosuccessWrap .prosuccbot  .title strong i {float: left;margin-right: 8px;font-size: 24px;
+height: 60px;line-height: 60px;}
+/*/2016.10.9*/
+
+
+/*2016.10.9*/
+.indexbg{position:fixed;top:0;left:0;width:100%;height:100%;z-index:9998;background:url(../images/stock_9.png) repeat;}
+.aaa{background:#fff;width:640px;height:320px;position:fixed;left:50%;margin-left:-320px;top:20%;z-index:9999;padding:20px;border-radius:10px;}
+/*/2016.10.9*/
+
+
+.adsajswap{padding: 0 20px;}
+.earnwap{position: relative;overflow: hidden;}
+.earnwap li{ float:left; width:272px; margin-right:18px;margin-top: 25px;}
+.earnwap li .pic{border: 1px solid #eee; width: 270px; height: 208px; position: relative; overflow: hidden;}
+.earnwap li .info{margin-top: 10px;}
+.earnwap li .info h4{font-size: 16px; font-weight: 400;text-align: center;}
+.earnwap li .info p{color: #2b4f8d; font-size: 16px; font-weight: bold;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

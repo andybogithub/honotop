@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Webadmin.master.cs" Inherits="webadmin_Webadmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/thisisbackstage/content/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/thisisbackstage/content/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="/thisisbackstage/content/css/matrix-style.css" />
+    <link rel="stylesheet" href="/thisisbackstage/content/css/matrix-media.css" />
+    <link rel="stylesheet" href="/thisisbackstage/content/css/style.css" />
+    <link rel="stylesheet" href="/thisisbackstage/content/css/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/thisisbackstage/content/css/uniform.css" />
+    <script src="/thisisbackstage/content/js/jquery-1.9.1.min.js"></script>
+
+    <title>天图物流后台管理系统</title>
+
+    <script src="/thisisbackstage/content/js/jquery.uniform.js"></script>
+
+    <script>
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]); return null;
+        }
+
+        function subMenu(cla, sub) {
+            $('#sidebar .' + cla).addClass('active');
+            $('#sidebar .' + cla).closest('ul').show();
+        }
+    </script>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+</head>
+<body>
+    <!--头部-->
+    <div id="header">
+        <img src="content/img/logo.png" style="width: 176px; height: 60px; left: 20px; top: 8px; line-height: 600px; overflow: hidden; position: relative;" />
+    </div>
+
+    <!--顶部菜单-->
+    <div id="user-nav" class="navbar navbar-inverse">
+        <ul class="nav">
+            <li class="dropdown" id="profile-messages"><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle">
+                <i class="icon icon-user"></i><span class="text"><%=adminname %></span><b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="AdminAdd.aspx?id=<%=adminid %>"><i class="icon-user"></i>修改</a></li>
+                    <li class="divider"></li>
+                    <li><a href="logout.aspx"><i class="icon-key"></i>登出</a></li>
+                </ul>
+            </li>
+            <li class=""><a title="" href="logout.aspx"><i class="icon icon-share-alt"></i><span class="text">登出</span></a></li>
+        </ul>
+    </div>
+
+
+    <!--左侧菜单-->
+    <div id="sidebar">
+        <a href="#" class="visible-phone"><i class="icon icon-fullscreen"></i>Full width</a>
+        <ul>
+
+            <li class="mHonor"><a href="Honors.aspx"><i class="icon icon-trophy"></i><span>荣誉与资质</span> </a></li>
+            <li class="mAbout submenu"><a href="#"><i class="icon icon-group"></i><span>天图服务</span></a>
+                <ul style="display: none;">
+                    <%--<li class="mAbout1"><a href="AboutUsAdd.aspx?abid=1"><i class="icon icon-pencil"></i><span>天图SaaS介绍</span> </a></li>--%>
+                    <li class="mAbout2"><a href="AboutUsAdd.aspx?abid=2"><i class="icon icon-pencil"></i><span>人力资源及管理</span> </a></li>
+                    <li class="mAbout3"><a href="AboutUsAdd.aspx?abid=3"><i class="icon icon-pencil"></i><span>ERP</span> </a></li>
+                    <li class="mAbout4"><a href="AboutUsAdd.aspx?abid=4"><i class="icon icon-pencil"></i><span>TMS</span> </a></li>
+                    <li class="mAbout5"><a href="AboutUsAdd.aspx?abid=5"><i class="icon icon-pencil"></i><span>WMS</span> </a></li>
+                    <li class="mAbout6"><a href="AboutUsAdd.aspx?abid=6"><i class="icon icon-pencil"></i><span>结算系统</span> </a></li>
+                    <li class="mAbout7"><a href="AboutUsAdd.aspx?abid=7"><i class="icon icon-pencil"></i><span>股票信息</span> </a></li>
+                    <li class="mAbout11"><a href="AboutUsAdd.aspx?abid=11"><i class="icon icon-pencil"></i><span>金融模块</span> </a></li>
+                </ul>
+            </li>
+
+            <li class="mPhoto"><a href="PhotosList.aspx"><i class="icon icon-picture"></i><span>图片展示 </span></a></li>
+            <li class="mCase"><a href="CasesList.aspx"><i class="icon icon-pencil"></i><span>客户案例 </span></a></li>
+            <li class="mReport"><a href="ReportList.aspx"><i class="icon icon-bar-chart"></i><span>定期报告</span> </a></li>
+
+
+            <li class="mNotice"><a href="NoticesList.aspx"><i class="icon icon-comment"></i><span>公司公告</span> </a></li>
+            <li class="mLink"><a href="LinksList.aspx"><i class="icon icon-sitemap"></i><span>股票信息</span> </a></li>
+
+            <li class="mSet1"><a href="Instructions.aspx"><i class="icon icon-book"></i><span>招股说明书</span> </a></li>
+
+
+            <li class="mNews"><a href="NewsList.aspx"><i class="icon icon-globe"></i><span>新闻管理</span> </a></li>
+
+            <li class="mCate4"><a href="CateList.aspx?clzid=4"><i class="icon icon-asterisk"></i><span>定期报告类别</span> </a></li>
+
+
+            <li class="mConfig"><a href="Configure.aspx"><i class="icon icon-cog"></i><span>网站配置</span> </a></li>
+            <li class="mAdmin"><a href="AdminList.aspx"><i class="icon icon-user"></i><span>管理员</span></a> </li>
+
+            <li class="mLog"><a href="LoginLog.aspx"><i class="icon icon-book"></i><span>登录日志</span></a> </li>
+              <li class="mwl"><a href="WordList.aspx"><i class="icon icon-pencil"></i><span>敏感词过滤</span></a> </li>
+        </ul>
+    </div>
+
+
+
+    <div id="content">
+        <div id="content-header">
+            <div id="breadcrumb"><a href="#" title="回到首页" class="tip-bottom"><i class="icon-home"></i>首页</a></div>
+        </div>
+        <div class="container-fluid">
+
+            <form id="form1" runat="server">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="row-fluid">
+        <div id="footer" class="span12">
+            <a href="http://black-jet.com">技术支持:&nbsp;&nbsp;广州黑箭信息科技有限公司</a>
+        </div>
+    </div>
+
+
+    <script src="/thisisbackstage/content/js/jquery.min.js"></script>
+    <script src="/thisisbackstage/content/js/jquery.ui.custom.js"></script>
+    <script src="/thisisbackstage/content/js/bootstrap.min.js"></script>
+    <script src="/thisisbackstage/content/js/matrix.js"></script>
+    <script src="/thisisbackstage/content/js/jquery.uniform.js"></script>
+
+
+</body>
+</html>

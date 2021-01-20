@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7BD7F4BD-3ECD-4CDF-BEDB-0C78E05D84C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tiantu.DB</RootNamespace>
+    <AssemblyName>Tiantu.DB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net40\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DapperExtensions, Version=1.4.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DapperExtensions.1.4.4\lib\net40\DapperExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LitJson, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LitJson.0.7.0\lib\LitJson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DESEncrypt.cs" />
+    <Compile Include="Common\JsonUtil.cs" />
+    <Compile Include="Common\SL.cs" />
+    <Compile Include="Common\SystemExtensions.cs" />
+    <Compile Include="Common\URLRewriter.cs" />
+    <Compile Include="Common\ShopStoreConfig.cs" />
+    <Compile Include="DAL\AboutUs.cs" />
+    <Compile Include="DAL\Admins.cs" />
+    <Compile Include="DAL\Admins.Ext.cs" />
+    <Compile Include="DAL\Banners.cs" />
+    <Compile Include="DAL\Cases.cs" />
+    <Compile Include="DAL\Categorys.cs" />
+    <Compile Include="DAL\Clazz.cs" />
+    <Compile Include="DAL\Honors.cs" />
+    <Compile Include="DAL\Links.cs" />
+    <Compile Include="DAL\News.cs" />
+    <Compile Include="DAL\Notices.cs" />
+    <Compile Include="DAL\Photos.cs" />
+    <Compile Include="DAL\Reports.cs" />
+    <Compile Include="DAL\Reports.Ext.cs" />
+    <Compile Include="DAL\Setting.cs" />
+    <Compile Include="DAL\Setting.Ext.cs" />
+    <Compile Include="DAL\ShopStore.cs" />
+    <Compile Include="DAL\Users.cs" />
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="DBUtility\CommandInfo.cs" />
+    <Compile Include="DBUtility\DbHelperSQL.cs" />
+    <Compile Include="Model\AboutUs.cs" />
+    <Compile Include="Model\Admins.cs" />
+    <Compile Include="Model\Banners.cs" />
+    <Compile Include="Model\Cases.cs" />
+    <Compile Include="Model\Categorys.cs" />
+    <Compile Include="Model\Clazz.cs" />
+    <Compile Include="Model\Honors.cs" />
+    <Compile Include="Model\Links.cs" />
+    <Compile Include="Model\LoginLog.cs" />
+    <Compile Include="Model\News.cs" />
+    <Compile Include="Model\Notices.cs" />
+    <Compile Include="Model\Photos.cs" />
+    <Compile Include="Model\Reports.cs" />
+    <Compile Include="Model\ReportsExt.cs" />
+    <Compile Include="Model\Setting.cs" />
+    <Compile Include="Model\ShopStore.cs" />
+    <Compile Include="Model\Users.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\WebControlsHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

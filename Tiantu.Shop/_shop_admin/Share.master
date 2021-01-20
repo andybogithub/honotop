@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Share.master.cs" Inherits="_shop_admin_Share" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>天图物流 </title>
+    <!-- common css -->
+    <link href="/_shop_admin/style/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/_shop_admin/style/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/_shop_admin/style/css/metisMenu.css" rel="stylesheet" />
+    <link href="/_shop_admin/style/css/style.css" rel="stylesheet" />
+
+    <!-- common js -->
+    <script src="/_shop_admin/style/js/jquery.min.js"></script>
+    <script src="/_shop_admin/style/js/bootstrap.min.js"></script>
+    <script src="/_shop_admin/style/js/plugs/jquery.slimscroll.js"></script>
+    <script src="/_shop_admin/style/js/plugs/metisMenu.js"></script>
+    <script src="/_shop_admin/style/js/plugs/jquery.sparkline.min.js"></script>
+
+    <!-- config -->
+    <script src="/_shop_admin/style/js/app.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fixed-left" style="font-family: 微软雅黑;">
+
+
+    <div id="wrapper">
+
+        <!--top bar-->
+        <div class="topbar">
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="/_shop_admin/desk.aspx" class="logo">天图物流商城管理中心</a>
+                </div>
+            </div>
+            <div class="pull-left menu-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="pull-left app-name hidden-xs">
+            </div>
+            <ul class="nav navbar-nav  top-right-nav hidden-xs">
+                <li>
+                    <span id="para2"></span>
+                    <span id="para3"></span>
+                    <span id="para1"></span>
+                </li>
+
+                <li class="dropdown profile-link hidden-xs">
+                    <div class="clearfix">
+                        <a class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-user pull-left"></i><span><%=Page.User.Identity.Name %>
+                                <br />
+                                <em>管理员</em></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/_shop_admin/login.aspx?action=logout">退出系统</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <!--end top bar-->
+
+        <!--left menu start-->
+        <div class="side-menu left" id="side-menu" style="position: fixed;">
+
+            <ul class="metismenu clearfix" id="menu">
+
+                <li class="profile-menu visible-xs">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="/_shop_admin/style/images/usericon.png" alt="" class="pull-left" width="32" height="32" />
+                    </a>
+                    <ul class="dropdown-menu profile-drop">
+                        <li><a href="login.aspx?action=logout">退出系统</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/_shop_admin/desk.aspx"><i class="fa fa-home"></i><span>管理首页</span></a></li>
+
+                <li>
+                    <a><i class="fa fa-cog"></i><span>商城设置</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="/_shop_admin/banner/list.aspx">轮播广告设置</a></li>
+                        <li><a href="/_shop_admin/category/list.aspx">商品分类设置</a></li>
+                        <li><a href="/_shop_admin/news/list.aspx">最新消息管理</a></li>
+                        <%--<li><a href="/_shop_admin/about/add.aspx?aboutid=1">赚取价格</a></li>--%>
+                        <li><a href="/_shop_admin/qa/list.aspx">帮助中心</a></li> 
+                        <%--<li><a href="/_shop_admin/about/add.aspx?aboutid=2">奖品领取说明</a></li>--%>
+                    </ul>
+                </li>
+                  <li>
+                    <a><i class="fa fa-list-alt"></i><span>商品管理</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="/_shop_admin/product/list.aspx">商品查询</a></li>
+                        <li><a href="/_shop_admin/product/add.aspx">添加商品</a></li>
+                    </ul>
+                </li>
+                 <li>
+                    <a><i class="fa fa-list-alt"></i><span>夺宝商品管理</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="/_shop_admin/duobao/list.aspx">夺宝商品查询</a></li>
+                        <li><a href="/_shop_admin/duobao/add.aspx">添加夺宝商品</a></li>
+                    </ul>
+                </li>
+                <%--   <li>
+                    <a><i class="fa fa-gamepad"></i><span>金币游戏管理</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="/_shop_admin/game/list.aspx">金币游戏查询</a></li>
+                        <li><a href="/_shop_admin/game/add.aspx">添加金币游戏</a></li>
+                    </ul>
+                </li>--%>
+                <li>
+                    <a><i class="fa fa-cart-plus"></i><span>订单中心</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="/_shop_admin/order/list.aspx">订单查询</a></li>
+                    </ul>
+                </li>
+              
+               
+
+
+            </ul>
+            <div class="nav-bottom clearfix hidden">
+                <a style="border-right: 0px;"><i class="fa fa-lock"></i></a>
+                <a style="border-right: 0px;"><i class="fa fa-download"></i></a>
+                <a style="border-right: 0px;"><i class="fa fa-globe"></i></a>
+                <a style="border-right: 0px;"><i class="fa fa-phone"></i></a>
+            </div>
+        </div>
+
+
+
+        <!--left menu end-->
+        <div class="content-page  equal-height">
+            <div class="content">
+
+
+
+
+                <div class="container">
+
+                    <form id="form1" runat="server">
+
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+
+                    </form>
+
+
+                </div>
+                <!--content-->
+            </div>
+            <!--content page-->
+        </div>
+        <!--end wrapper-->
+    </div>
+
+
+
+
+
+    <div class="footer" style="position: fixed; bottom: 0;">
+        <span>Copyright &copy; <%=DateTime.Now.Year %>. 天图物流有限公司</span>
+    </div>
+
+
+
+
+</body>
+</html>
