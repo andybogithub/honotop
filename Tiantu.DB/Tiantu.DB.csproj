@@ -59,7 +59,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\CaptureUtils.cs" />
     <Compile Include="Common\DESEncrypt.cs" />
+    <Compile Include="Common\HtmlUtils.cs" />
     <Compile Include="Common\JsonUtil.cs" />
     <Compile Include="Common\SL.cs" />
     <Compile Include="Common\SystemExtensions.cs" />

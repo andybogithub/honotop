@@ -103,6 +103,7 @@
 
             <li class="mLog"><a href="LoginLog.aspx"><i class="icon icon-book"></i><span>登录日志</span></a> </li>
               <li class="mwl"><a href="WordList.aspx"><i class="icon icon-pencil"></i><span>敏感词过滤</span></a> </li>
+              <li class="mwl"><a href="CaptureData.aspx"><i class="icon icon-download"></i><span>公告与报告采集</span></a> </li>
         </ul>
     </div>
 

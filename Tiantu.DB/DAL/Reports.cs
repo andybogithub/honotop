@@ -55,6 +55,28 @@ namespace Tiantu.DB.DAL
             }
         }
 
+        public bool Exists(string title)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select count(1) from Reports");
+            strSql.Append(" where title=@title ");
+            using (SqlConnection cn = new SqlConnection(_connectionString))
+            {
+                cn.Open();
+                int result = cn.QuerySingle<int>(strSql.ToString(), new { title = title });
+                cn.Close();
+                return result > 0;
+            }
+        }
+
+
+        public int GetCategoryId(int yearId)
+        {
+            var strSql = "select cateid from Categorys t where clzid=4 and catename='{0}年度'".ToFormat(yearId);
+            var objRs = DbHelperSQL.GetSingle(strSql);
+            return null == objRs ? 0 : Convert.ToInt32(objRs);
+        }
+
         /// <summary>
         /// 增加一条数据
         /// </summary>

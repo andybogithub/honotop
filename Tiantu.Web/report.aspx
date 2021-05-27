@@ -1,6 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainUI.master" AutoEventWireup="true" CodeFile="report.aspx.cs" Inherits="report" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <style>
+        .report .reportnav li{background:#f4f4f4;color:#333;}
+        .report .reportnav li a{color:#333;}
+        .report .reportnav li.on a{color:#fff;}
+        .reportmain a:hover{color:#427ad9;}
+        .report .reportmain{border:none;}
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <script type="text/javascript">
@@ -30,21 +37,23 @@
             <div class="report cl">
                 <div class="l reportnav">
                     <ul>
+                        <li style="background:#427ad9;"><a href="report.aspx" style="color:#fff;">全部</a></li>
                         <asp:Literal ID="lblNav" runat="server"></asp:Literal>
                     </ul>
                 </div>
                 <div class="l reportmain">
-                    <ul class="a cl">
+                    <ul class="a cl" style="padding:15px 0;">
                         <asp:Repeater ID="RepeaterList" runat="server">
                             <ItemTemplate>
-                                <li>
+                                <li style="display:block;width:96%;margin:15px;margin-left:30px;border-bottom:1px solid #f4f4f4;padding-bottom:10px;"> 
                                     <div class="reportde">
                                         <a href="reportde.aspx?reportid=<%# Eval("REPORTID") %>">
-                                            <img src="<%# Eval("IMGURL") %>" width="420" height="500" /></a>
+                                            <%# GetImageText(Eval("IMGURL"),Eval("TITLE")) %>
+                                            </a>
                                     </div>
                                     <div class="repdown">
-                                        <a href="<%# Eval("PDFURL") %>" download>
-                                            <img src="/style/images/report_down.png" /></a>
+                                        <a href="<%# Eval("PDFURL") %>" title="点击下载pdf文件">
+                                            <img src="/style/images/pdf.png" /></a>
                                     </div>
                                 </li>
                             </ItemTemplate>
@@ -53,13 +62,15 @@
                     <%--<div class="more"><a href="#">加载更多</a></div>--%>
                 </div>
                 <!--翻页-->
-                <link rel="stylesheet" type="text/css" href="style/css/simplePagination.css" />
+            
+                <asp:PlaceHolder ID="PlaceHolderPager" runat="server" Visible="false">
+                        <link rel="stylesheet" type="text/css" href="style/css/simplePagination.css" />
                 <script src="js/jquery.simplePagination.js"></script>
                 <script>
-                    $(function(){
+                    $(function () {
                         $('#light-pagination').pagination({
                             items: <%=this.RecordCount%>,
-                            itemsOnPage: 12,
+                            itemsOnPage: 50,
                             currentPage:<%=this.PageIndex%>,
                             hrefTextPrefix: 'report.aspx?ca=<%=cateid %>&pageid=',
                             cssStyle: 'page-theme'
@@ -72,6 +83,9 @@
                         <ul id="light-pagination" class="pagination"></ul>
                     </div>
                 </div>
+                </asp:PlaceHolder>
+
+
             </div>
 
 

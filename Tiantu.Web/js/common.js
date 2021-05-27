@@ -7,6 +7,7 @@ $(function(){
 	},function(){
 		$(this).find(".followImg").hide();
 	});
+	 
 })
 
 

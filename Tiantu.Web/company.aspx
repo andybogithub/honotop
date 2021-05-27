@@ -36,9 +36,9 @@
                                         <h4><%# Eval("TITLE") %></br><span><%# ((DateTime)Eval("PUBDATE")).ToString("yyyy-MM-dd")%></span></h4>
                                     </a>
                                     <a href="companyde.aspx?noticeid=<%# Eval("NOTICEID") %>">
-                                        <div class="download">
-                                            <a href="<%# Eval("PDFURL") %>" download>
-                                                <input type="button" />下载</a>
+                                        <div class="download" style="background:#fff;">
+                                            <a href="<%# Eval("PDFURL") %>"  title="点击下载pdf">
+                                                 <img src="/style/images/pdf.png" /></a>
                                         </div>
                                     </a>
                                 </dd>

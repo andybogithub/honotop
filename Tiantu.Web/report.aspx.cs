@@ -31,7 +31,7 @@ public partial class report : System.Web.UI.Page
 
 
         string strWhere = "1=1";
-        string srtOrder = "sortId desc, REPORTID DESC,PUBDATE DESC";
+        string srtOrder = "title desc,t.sortId desc";  //"sortId desc, REPORTID DESC,PUBDATE DESC";
         if (this.cateid > 0)
         {
             strWhere += " AND T.CATEID=" + this.cateid;
@@ -41,7 +41,7 @@ public partial class report : System.Web.UI.Page
         this.PageIndex = SL.GetQueryIntValue("pageid");
         this.RecordCount = dalReports.GetRecordCount(strWhere);
 
-        int PageSize = 12;
+        int PageSize = 50;
         int startIndex = 0;
         int endIndex = 0;
         SL.GetPager(ref this.PageIndex, this.RecordCount, PageSize, out startIndex, out endIndex);
@@ -54,8 +54,23 @@ public partial class report : System.Web.UI.Page
             this.RepeaterList.DataBind();
         }
 
+
+        if (RecordCount > PageSize)
+        {
+            this.PlaceHolderPager.Visible = true;
+        }
+
     }
 
 
+
+    protected string GetImageText(object imgVal, object oTitle)
+    {
+        if (imgVal == null || imgVal.ToString().Length < 3)
+            return oTitle.ToString();
+
+        return oTitle.ToString();
+       // return "<img src='{0}' width='420'  />".ToFormat(imgVal);
+    }
 
 }

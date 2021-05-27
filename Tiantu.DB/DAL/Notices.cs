@@ -55,6 +55,20 @@ namespace Tiantu.DB.DAL
             }
         }
 
+        public bool Exists(string title)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select count(1) from Notices");
+            strSql.Append(" where title=@title ");
+            using (SqlConnection cn = new SqlConnection(_connectionString))
+            {
+                cn.Open();
+                int result = cn.QuerySingle<int>(strSql.ToString(), new { title = title });
+                cn.Close();
+                return result > 0;
+            }
+        }
+
         /// <summary>
         /// 增加一条数据
         /// </summary>
